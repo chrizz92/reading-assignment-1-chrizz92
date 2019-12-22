@@ -1,10 +1,4 @@
-/*
 
-Simple House
-
-https://templatemo.com/tm-539-simple-house
-
-*/
 
 ul, nav, body, h1, h2, h4, h6, p, figure {
   margin: 0;
@@ -483,7 +477,7 @@ p, address {
   color: #1A6692;
 }
 
-/* About */
+/* Über uns */
 .tm-persons {
   margin-bottom: 20px;
 }
@@ -623,7 +617,7 @@ p, address {
   } 
 }
 
-/* Contact Page */
+/* Kontakt */
 .tm-contact-form {
   max-width: 100%;
 }
