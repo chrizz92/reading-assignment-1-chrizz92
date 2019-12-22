@@ -8,5 +8,6 @@ https://github.com/pixelcog/parallax.js/
 JQUERY.JS
 https://jquery.com
 
-
+FONT-AWESOME
+https://github.com/FortAwesome/Font-Awesome
 
