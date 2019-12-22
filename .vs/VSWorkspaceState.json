@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\WEBSEITE"
+    "\\WEBSEITE",
+    "\\WEBSEITE\\css"
   ],
-  "SelectedNode": "\\WEBSEITE\\about.html",
+  "SelectedNode": "\\WEBSEITE\\css\\all.style.css",
   "PreviewInSolutionExplorer": false
 }
