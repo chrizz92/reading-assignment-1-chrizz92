@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\WEBSEITE"
+    "\\WEBSEITE",
+    "\\WEBSEITE\\js"
   ],
-  "SelectedNode": "\\WEBSEITE\\Quellen.txt",
+  "SelectedNode": "\\WEBSEITE\\js\\contact.js",
   "PreviewInSolutionExplorer": false
 }
