@@ -19,3 +19,11 @@ Kontakt:
 Impressum:
 	An österreichische Gesetzgebung anpassen (dzt. deutsches Recht)
 
+Mobile Seite:
+	Hamburger-Menü:
+		Umbruch innerhalb von "col-6" sodass das Menü nicht ins Bild rutscht
+	Newsletter-Anmeldung:
+		Umbruch innerhalb des Newsletter-Bereichs
+	Impressum:
+		Textgröße/Umbrüche an Bildschirmgröße anpassen
+
