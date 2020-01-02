@@ -198,6 +198,8 @@ section{
 }
 
 #header-nav ul{
+	position: relative;
+	z-index: 1;
 	margin: 0;
 	padding: 0;
 	float: right;
@@ -1090,6 +1092,7 @@ section{
 
 #impressum{
 	position: relative;
+	z-index: 0;
 	width: 80%;
 	margin-right: auto;
 	margin-left: auto;
