@@ -1,3 +1,6 @@
+Allgemein:
+	Neuer Blauton #3484E5
+
 Navigation:
 	Buttoneffekte optimieren (Hovereffekt, nicht nur Text sondern ganze Box)
 	Hintergrundbild austauschen
