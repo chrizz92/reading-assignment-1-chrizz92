@@ -1,0 +1,21 @@
+Navigation:
+	Buttoneffekte optimieren (Hovereffekt, nicht nur Text sondern ganze Box)
+	Hintergrundbild austauschen
+	Sticky-Effekt?
+
+Startseite:
+	Anordnung prüfen
+	Newsletter-Anmeldung:
+		Newsletter-Anmeldung zwischen "Unser Service" und "Das sind wir"
+		Funktionalität hinzufügen
+
+Leistungen:
+	Verknüpfung der Buttons mit Kontaktformular
+
+Kontakt:
+	Kontaktformular ergänzen
+	Google Maps einbinden
+
+Impressum:
+	An österreichische Gesetzgebung anpassen (dzt. deutsches Recht)
+
