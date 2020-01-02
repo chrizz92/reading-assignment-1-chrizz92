@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="de">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>WebDesign made simple</title>
+
+<!-- === FAVICONS === -->
+		<link rel="apple-touch-icon" sizes="180x180" href="./src/img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./src/img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="./src/img/favicon/site.webmanifest">
+		<link rel="mask-icon" href="./src/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="./src/img/favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#f0f0f0">
+		<meta name="msapplication-config" content="./src/img/favicon/browserconfig.xml">
+		<meta name="theme-color" content="#f0f0f0">
+
+<!-- === FONTS=== -->
+		<link rel="stylesheet" type="text/css" href="./src/css/styles.min.css">
+	</head>
+	<body>
+
+<!--=== NAVIGATIONSLEISTE ===-->
+<nav id="header-nav">
+
+<!--=== NAVIGATIONSLEISTE Skalierbar machen!!!
+div.container>div.row>div.col-6 ===-->
+	<div class="container" id="desktop-nav">
+		<div class="row">
+			<div class="col-6">
+				<a href="index.html" class="logo-link"><img src="src/img/webdesign-logo.png" alt="Das Logo von webdesign"></a>
+
+<!--=== Emmet - CODE     ul>li*4>a    ===-->
+			<ul>
+				<li class="active"><a href="index.html">Startseite</a></li>
+				<li><a href="leistungen.html">Leistungen</a></li>
+				<li><a href="kontakt.html">Kontakt</a></li>
+				<li><a href="impressum.html">Impressum</a></li>
+			</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container" id="mobile-nav">
+		<div class="row">
+			<div class="col-6">
+				<a href="index.html" class="logo-link"><img src="src/img/webdesign-logo.png" alt="Das Logo von webdesign"></a>
+
+<!--===BUTTON===-->
+<div class="clearfix" id="mobile-nav-dropdown">
+	<div id="mobile-nav-botton"><span>&equiv;</span></div>
+
+	<div class="clearfix" id="mobile-nav-content">
+
+<!--=== Emmet - CODE   ul>li*4>a    ===-->
+		<ul>
+			<li class="active"><a href="index.html">Startseite</a></li>
+			<li><a href="leistungen.html">Leistungen</a></li>
+			<li><a href="kontakt.html">Kontakt</a></li>
+			<li><a href="impressum.html">Impressum</a></li>
+		</ul>
+	</div>
+</div>
+			</div>
+		</div>
+	</div>
+</nav>
+
+<!-- ==== HEADER-BANNER === -->
+
+<header id="header-banner"></header>
+
+<!-- === NEWSLETTER-Bereich === -->
+
+<section id="newsletter-bereich">
+
+<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<p id="nb-werbetext"><span class="wichtiger-text">Melde dich jetzt für den NEWSLETTER an
+					und verpasse nichts mehr!</span> Wir schicken dir nur interessante Informationen!</p>
+			</div>
+			<div class="col-2" clearfix>
+
+<form id="nb-form" action="index.html" method="get">
+
+<label class="screenreader" for="nb-email">E-Mail:</label>
+	<input class="nb-email-input" id="nb-email" type="text" name="email" placeholder="Deine E-Mail Adresse"
+	pattern="(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|\u0022(?:
+	[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*\u0022)@
+	(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4]
+	[0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:
+	[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])"
+  title="Gib eine gültige E-Mail Adresse ein">
+
+	<button class="button-typ-1" id="nb-button" type="submit">Jetzt Anmelden</button>
+
+</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- === LOGO === -->
+
+<div id="animiertes-logo">
+<img src="./src/img/webdesign-logo-klein.png" alt="Logo WebDesign made simple">
+</div>
+
+<!-- === LEISTUNGEN - BEREICH === -->
+
+<section id="leistungen-bereich">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-6">
+				<header class="intro-container">
+					<h1>WebDesign made simple</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</header>
+				</div>
+			</div>
+		<div class="row">
+			<div class="col-3">
+				<article class="leistungs-box">
+					<h2>Leistungen#1</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<a class="button-typ-2 leistung-ansehen-button" href="leistungen.html#leistungen1">Ansehen</a>
+				</article>
+			</div>
+			<div class="col-3">
+				<article class="leistungs-box">
+					<h2>Leistungen#2</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<a class="button-typ-2 leistung-ansehen-button" href="leistungen.html#leistungen2">Ansehen</a>
+				</article>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-3">
+				<article class="leistungs-box">
+					<h2>Leistungen#3</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<a class="button-typ-2 leistung-ansehen-button" href="leistungen.html#leistungen3">Ansehen</a>
+				</article>
+			</div>
+			<div class="col-3">
+			<article class="leistungs-box">
+				<h2>Leistungen#4</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<a class="button-typ-2 leistung-ansehen-button" href="leistungen.html#leistungen4">Ansehen</a>
+			</article>
+		</div>
+	</div>
+</div>
+</section>
+<!-- === EMMET - CODE ===
+section#leistungen-bereich>div.container>div.row>div.col-6>h1{Unsere leistungen}+p{Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.}^^(div.row>(div.col-3>h2{Leistung #$}+p{Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.}+a{Ansehen})*2)*2 =====> shift+Enter
+-->
+<!-- === VIDEO - BEREICH === -->
+<section id="video-bereich">
+
+<div class="container">
+	<div class="row">
+		<div class="col-6">
+			<header class="intro-container">
+				<h1>Das sind wir</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</header>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-6">
+			<video src="./src/mov/WEBDESIGN-made-simple-Trailer.mp4" controls>
+				<p>
+						Das Video kann leider nicht wiedergegeben werden.
+						Du findest es auch <a href="https://youtu.be/Ut2goGezYM4">hier</a>.
+				</p>
+			</video>
+		</div>
+	</div>
+</div>
+
+</section>
+
+<!-- === SERVICE - BEREICH ===
+
+ === EMMET - CODE ===
+div.container>div.row>div.col-6>header.intro-container>h1{Unsere Services}+p{Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.}
+-->
+
+<section id="service-bereich">
+
+<div class="container">
+	<div class="row">
+		<div class="col-6">
+			<header class="intro-container">
+				<h1>Unser Service</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</header>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-2">
+			<article class="service-box">
+			<div id="guenstig-icon" class="service-icon"></div>
+			<h1>Günstige Angebote</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+			</article>
+		</div>
+		<div class="col-2">
+		<article class="service-box">
+		<div id="schnell-icon" class="service-icon"></div>
+		<h1>Schnelle Lieferung</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+		</article>
+		</div>
+		<div class="col-2">
+		<article class="service-box">
+		<div id="modernes-icon" class="service-icon"></div>
+		<h1>Modernes Design</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+		</article>
+		</div>
+	</div>
+</div>
+</section>
+
+<!-- === ÜBER - UNS - BEREICH === -->
+
+<section id="über-uns-bereich">
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-6">
+				<header class="intro-container">
+					<h1>Das sind wir</h1>
+				</header>
+			</div>
+		</div>
+			<div class="row">
+				<div class="col-6">
+					<article id="über-uns-container">
+						<p>Bei einem größeren Unternehmen können Sie auch das ganze Team vorstellen.
+							Welche Menschen machen das Unternehmen zu dem, was es ist? Tipps und Content-Pisten
+							lesen Sie in meinem Beitrag zur Teamvorstellung. Bei einem größeren Unternehmen können Sie auch das ganze Team vorstellen.
+								Welche Menschen machen das Unternehmen zu dem, was es ist? Tipps und Content-Pisten
+								lesen Sie in meinem Beitrag zur Teamvorstellung.Bei einem größeren Unternehmen können Sie auch das ganze Team vorstellen.
+									Welche Menschen machen das Unternehmen zu dem, was es ist? Tipps und Content-Pisten
+									lesen Sie in meinem Beitrag zur Teamvorstellung. Bei einem größeren Unternehmen können Sie auch das ganze Team vorstellen.
+										Welche Menschen machen das Unternehmen zu dem, was es ist? Tipps und Content-Pisten
+										lesen Sie in meinem Beitrag zur Teamvorstellung.
+						</p>
+						<p>Bei anderen Online-Shops entfällt die Möglichkeit, besonders viel über den Gründer oder
+							das Team zu erzählen (Beispiel: ein Shop für Handyzubehör – Hand aufs Herz, die Motivation
+							des Gründers interessiert hier eher weniger). Sie können jedoch erklären, wie Ihre Produkte
+							hergestellt bzw. ausgesucht werden. Woher stammen die Produkte? Wie werden Sie produziert?
+							Nach welchen Kriterien wählen Sie sie aus? Bei anderen Online-Shops entfällt die Möglichkeit, besonders viel über den Gründer oder
+								das Team zu erzählen (Beispiel: ein Shop für Handyzubehör – Hand aufs Herz, die Motivation
+								des Gründers interessiert hier eher weniger). Sie können jedoch erklären, wie Ihre Produkte
+								hergestellt bzw. ausgesucht werden. Woher stammen die Produkte? Wie werden Sie produziert?
+								Nach welchen Kriterien wählen Sie sie aus?
+						</p>
+						<p>Als besondere Form können Sie ein kleines Interview auf Ihre Über-uns-Seite stellen. Dies ist
+							gerade dann nützlich, wenn Sie als größeres Unternehmen die persönliche Meinung des Unternehmenschefs
+							darlegen möchten. In einem „neutralen“ Über-uns-Text wäre dies nur schwer möglich. Bei einem größeren Unternehmen können Sie auch das ganze Team vorstellen.
+								Welche Menschen machen das Unternehmen zu dem, was es ist? Tipps und Content-Pisten
+								lesen Sie in meinem Beitrag zur Teamvorstellung.
+						</p>
+						<div id="logo-lang">
+							<img src="./src/img/webdesign-logo-vertical.png" alt="Logo vertikal">
+						</div>
+					</article>
+				</div>
+
+		</div>
+	</div>
+</section>
+
+<!-- === FOOTER === -->
+
+<footer id="footer">
+
+<div id="container">
+	<div class="row">
+		<div class="col-6">
+			<span>WEBDESIGN by SCHADLER & WIESINGER (2020)</span>
+			<nav id="footer-nav">
+			<a href="impressum.html">Impressum</a>
+			</nav>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+	</body>
+
+</html>
