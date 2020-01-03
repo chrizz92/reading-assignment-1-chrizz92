@@ -3,14 +3,14 @@ Christian:
 		(ERLEDIGT)Neuer Blauton #3484E5
 
 	Navigation:
-		Buttoneffekte optimieren (Hovereffekt, nicht nur Text sondern ganze Box)
+		(ERLEDIGT)Buttoneffekte optimieren (Hovereffekt, nicht nur Text sondern ganze Box)
 		(ERLEDIGT)Hintergrundbild austauschen
 		(ERLEDIGT)Sticky-Effekt?
 
 	Startseite:
 		Anordnung prüfen
 		Newsletter-Anmeldung:
-			Newsletter-Anmeldung zwischen "Unser Service" und "Das sind wir"
+			(ERLEDIGT)Newsletter-Anmeldung zwischen "Unser Service" und "Das sind wir"
 			Funktionalität hinzufügen
 
 	Leistungen:

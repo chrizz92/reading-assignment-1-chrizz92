@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Auftrag-WEBDESIGN-made-simple"
+    "\\WEBDESIGN",
+    "\\WEBDESIGN\\src",
+    "\\WEBDESIGN\\src\\mov"
   ],
-  "SelectedNode": "\\WEBDESIGN",
+  "SelectedNode": "\\WEBDESIGN\\index.html",
   "PreviewInSolutionExplorer": false
 }
