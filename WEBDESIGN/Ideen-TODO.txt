@@ -1,32 +1,34 @@
-Allgemein:
-	Neuer Blauton #3484E5
+Christian:
+	Allgemein:
+		Neuer Blauton #3484E5
 
-Navigation:
-	Buttoneffekte optimieren (Hovereffekt, nicht nur Text sondern ganze Box)
-	Hintergrundbild austauschen
-	Sticky-Effekt?
+	Navigation:
+		Buttoneffekte optimieren (Hovereffekt, nicht nur Text sondern ganze Box)
+		Hintergrundbild austauschen
+		Sticky-Effekt?
 
-Startseite:
-	Anordnung prüfen
-	Newsletter-Anmeldung:
-		Newsletter-Anmeldung zwischen "Unser Service" und "Das sind wir"
-		Funktionalität hinzufügen
+	Startseite:
+		Anordnung prüfen
+		Newsletter-Anmeldung:
+			Newsletter-Anmeldung zwischen "Unser Service" und "Das sind wir"
+			Funktionalität hinzufügen
 
-Leistungen:
-	Verknüpfung der Buttons mit Kontaktformular
+	Leistungen:
+		Verknüpfung der Buttons mit Kontaktformular
 
-Kontakt:
-	Kontaktformular ergänzen
-	Google Maps einbinden
+Kerstin:
+	Kontakt:
+		Kontaktformular ergänzen
+		Google Maps einbinden
 
-Impressum:
-	An österreichische Gesetzgebung anpassen (dzt. deutsches Recht)
-
-Mobile Seite:
-	Hamburger-Menü:
-		Umbruch innerhalb von "col-6" sodass das Menü nicht ins Bild rutscht
-	Newsletter-Anmeldung:
-		Umbruch innerhalb des Newsletter-Bereichs
 	Impressum:
-		Textgröße/Umbrüche an Bildschirmgröße anpassen
+		An österreichische Gesetzgebung anpassen (dzt. deutsches Recht)
+
+	Mobile Seite:
+		Hamburger-Menü:
+			Umbruch innerhalb von "col-6" sodass das Menü nicht ins Bild rutscht
+		Newsletter-Anmeldung:
+			Umbruch innerhalb des Newsletter-Bereichs
+		Impressum:
+			Textgröße/Umbrüche an Bildschirmgröße anpassen
 
