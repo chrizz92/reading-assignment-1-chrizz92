@@ -148,6 +148,13 @@ section{
 	margin-bottom: 2rem;
 }
 
+#leistungsheader {
+	background-color: #3d3f45;
+	width: 100%;
+	color: #ffffff;
+	padding: 1em;
+}
+
 @media(max-width: 1366px){
 	.intro-container{
 		width: 90%;
@@ -989,9 +996,9 @@ section{
 #leistungen1 {
 	position: relative;
 	z-index: 1;
-	margin-top: -200px;
 	background-color: #ffffff;
 	padding-top: 1rem;
+	margin-top: -200px;
 }
 
 .leistung{
@@ -1362,7 +1369,7 @@ section{
 		margin-top: 0;
 	}
 
-	#leistungen1 {
+	#leistungen {
 		margin-top: 0;
 	}
 
@@ -1409,7 +1416,7 @@ section{
 		margin-top: 50px;
 	}
 
-	#leistungen1 {
+	#leistungen {
 		margin-top: 50px;
 	}
 
