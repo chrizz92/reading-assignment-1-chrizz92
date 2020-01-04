@@ -6,6 +6,7 @@ Christian:
 		(ERLEDIGT)Buttoneffekte optimieren (Hovereffekt, nicht nur Text sondern ganze Box)
 		(ERLEDIGT)Hintergrundbild austauschen
 		(ERLEDIGT)Sticky-Effekt?
+		Zeilenumbruch innerhalb der Navigation bei width < 210px
 
 	Startseite:
 		(ERLEDIGT)Anordnung prüfen
