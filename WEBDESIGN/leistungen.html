@@ -14,23 +14,23 @@
 	<meta name="msapplication-TileColor" content="#f0f0f0">
 	<meta name="msapplication-config" content="./src/img/favicon/browserconfig.xml">
 	<meta name="theme-color" content="#f0f0f0">
-	<link rel="stylesheet" type="text/css" href="src/css/styles.css">
+	<!--<link rel="stylesheet" type="text/css" href="src/css/styles.css">-->
 	<link rel="stylesheet" type="text/css" href="./src/css/styles.min.css">
 </head>
 <body>
-<!--=== NAVIGATIONSLEISTE ===-->
+	<!--=== NAVIGATIONSLEISTE ===-->
 
 	<nav id="header-nav">
 
-<!--=== NAVIGATIONSLEISTE Skalierbar machen!!!
-div.container>div.row>div.col-6 ===-->
+		<!--=== NAVIGATIONSLEISTE Skalierbar machen!!!
+		div.container>div.row>div.col-6 ===-->
 
-			<div class="container" id="desktop-nav">
-				<div class="row">
-					<div class="col-6">
-						<a href="index.html" class="logo-link"><img src="src/img/webdesign-logo.png" alt="Das Logo von webdesign"></a>
+		<div class="container" id="desktop-nav">
+			<div class="row">
+				<div class="col-6">
+					<a href="index.html" class="logo-link"><img src="src/img/webdesign-logo.png" alt="Das Logo von webdesign"></a>
 
-						<!--=== ul>li*4>a (Eingabe mit Emmet) ===-->
+					<!--=== ul>li*4>a (Eingabe mit Emmet) ===-->
 					<ul>
 						<li><a href="index.html">Startseite</a></li>
 						<li class="active"><a href="leistungen.html">Leistungen</a></li>
@@ -38,299 +38,319 @@ div.container>div.row>div.col-6 ===-->
 						<li><a href="impressum.html">Impressum</a></li>
 					</ul>
 
-					</div>
 				</div>
-			</div>
-
-			<div class="container" id="mobile-nav">
-				<div class="row">
-					<div class="col-6">
-						<a href="index.html" class="logo-link"><img src="src/img/webdesign-logo.png" alt="Das Logo von webdesign"></a>
-
-		<!--===BUTTON===-->
-		<div class="clearfix" id="mobile-nav-dropdown">
-			<div id="mobile-nav-botton"><span>&equiv;</span></div>
-
-			<div class="clearfix" id="mobile-nav-content">
-					<!--=== ul>li*4>a (Eingabe mit Emmet)  ===-->
-				<ul>
-					<li><a href="index.html">Startseite</a></li>
-					<li class="active"><a href="leistungen.html">Leistungen</a></li>
-					<li><a href="kontakt.html">Kontakt</a></li>
-					<li><a href="impressum.html">Impressum</a></li>
-				</ul>
 			</div>
 		</div>
+
+		<div class="container" id="mobile-nav">
+			<div class="row">
+				<div class="col-6">
+					<a href="index.html" class="logo-link"><img src="src/img/webdesign-logo.png" alt="Das Logo von webdesign"></a>
+
+					<!--===BUTTON===-->
+					<div class="clearfix" id="mobile-nav-dropdown">
+						<div id="mobile-nav-botton"><span>&equiv;</span></div>
+
+						<div class="clearfix" id="mobile-nav-content">
+							<!--=== ul>li*4>a (Eingabe mit Emmet)  ===-->
+							<ul>
+								<li><a href="index.html">Startseite</a></li>
+								<li class="active"><a href="leistungen.html">Leistungen</a></li>
+								<li><a href="kontakt.html">Kontakt</a></li>
+								<li><a href="impressum.html">Impressum</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
-		</nav>
+		</div>
+	</nav>
 
 
 	<header id="header-banner">
-		<img src="./src/img/hintergrund.jpg" id="header-picture" alt="Headerbild" />
+		<img src="./src/img/hintergrund-neu.png" id="header-picture" alt="Headerbild" />
 	</header>
 
-<!-- === LEISTUNGEN - SEITE === -->
+	<!-- === LEISTUNGEN - SEITE === -->
 
-<section class="leistung" id="leistungen1">
+	<section class="leistung" id="leistungen1">
 
-	<div class="flex-container">
-		<header class="intro-container">
-			<h1>Leistung #1</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</header>
-	</div>
-<div class="flex-container">
+		<div class="flex-container">
+			<header class="intro-container">
+				<h1>Leistung #1</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</header>
+		</div>
+		<div class="flex-container">
 
-	<article class="leistung-box">
-		<h1>Basic</h1>
-	<div>
-		<p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<ul>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-		</ul>
-	</div>
-		<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
+			<article class="leistung-box">
+				<h1>Basic</h1>
+				<div>
+					<p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<ul>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+					</ul>
+				</div>
+				<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
 			</article>
 			<article class="leistung-box leistung-box-empfohlen">
-		<h1>Advanced</h1>
-	<div>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<ul>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-		</ul>
-	</div>
-		<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
+				<h1>Advanced</h1>
+				<div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<ul>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+					</ul>
+				</div>
+				<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
 			</article>
 			<article class="leistung-box">
-		<h1>Professional</h1>
-	<div>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<ul>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-		</ul>
-	</div>
-		<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
+				<h1>Professional</h1>
+				<div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<ul>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+					</ul>
+				</div>
+				<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
 			</article>
-			</div>
-</section>
+		</div>
+	</section>
 
-<!-- === Leistungen === -->
-<section class="leistung" id="leistungen2">
+	<!-- === Leistungen === -->
+	<section class="leistung" id="leistungen2">
 
-	<div class="flex-container">
-		<header class="intro-container">
-			<h1>Leistung #2</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</header>
-	</div>
-<div class="flex-container">
+		<div class="flex-container">
+			<header class="intro-container">
+				<h1>Leistung #2</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</header>
+		</div>
+		<div class="flex-container">
 
-	<article class="leistung-box">
-		<h1>Basic</h1>
-	<div>
-		<p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<ul>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-		</ul>
-	</div>
-		<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
+			<article class="leistung-box">
+				<h1>Basic</h1>
+				<div>
+					<p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<ul>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+					</ul>
+				</div>
+				<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
 			</article>
 			<article class="leistung-box leistung-box-empfohlen">
-		<h1>Advanced</h1>
-	<div>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<ul>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-		</ul>
-	</div>
-		<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
+				<h1>Advanced</h1>
+				<div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<ul>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+					</ul>
+				</div>
+				<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
 			</article>
 			<article class="leistung-box">
-		<h1>Professional</h1>
-	<div>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<ul>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-		</ul>
-	</div>
-		<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
+				<h1>Professional</h1>
+				<div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<ul>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+					</ul>
+				</div>
+				<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
 			</article>
-			</div>
-</section>
+		</div>
+	</section>
 
-<!-- === Leistungen === -->
-<section class="leistung" id="leistungen3">
+	<!-- === Leistungen === -->
+	<section class="leistung" id="leistungen3">
 
-	<div class="flex-container">
-		<header class="intro-container">
-			<h1>Leistung #3</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</header>
-	</div>
-<div class="flex-container">
+		<div class="flex-container">
+			<header class="intro-container">
+				<h1>Leistung #3</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</header>
+		</div>
+		<div class="flex-container">
 
-	<article class="leistung-box">
-		<h1>Basic</h1>
-	<div>
-		<p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<ul>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-		</ul>
-	</div>
-		<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
+			<article class="leistung-box">
+				<h1>Basic</h1>
+				<div>
+					<p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<ul>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+					</ul>
+				</div>
+				<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
 			</article>
 			<article class="leistung-box leistung-box-empfohlen">
-		<h1>Advanced</h1>
-	<div>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<ul>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-		</ul>
-	</div>
-		<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
+				<h1>Advanced</h1>
+				<div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<ul>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+					</ul>
+				</div>
+				<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
 			</article>
 			<article class="leistung-box">
-		<h1>Professional</h1>
-	<div>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<ul>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-		</ul>
-	</div>
-		<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
+				<h1>Professional</h1>
+				<div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<ul>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+					</ul>
+				</div>
+				<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
 			</article>
-			</div>
-</section>
+		</div>
+	</section>
 
-<!-- === Leistungen === -->
-<section class="leistung" id="leistungen4">
+	<!-- === Leistungen === -->
+	<section class="leistung" id="leistungen4">
 
-	<div class="flex-container">
-		<header class="intro-container">
-			<h1>Leistung #4</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</header>
-	</div>
-<div class="flex-container">
+		<div class="flex-container">
+			<header class="intro-container">
+				<h1>Leistung #4</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</header>
+		</div>
+		<div class="flex-container">
 
-	<article class="leistung-box">
-		<h1>Basic</h1>
-	<div>
-		<p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<ul>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-		</ul>
-	</div>
-		<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
+			<article class="leistung-box">
+				<h1>Basic</h1>
+				<div>
+					<p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<ul>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+					</ul>
+				</div>
+				<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
 			</article>
 			<article class="leistung-box leistung-box-empfohlen">
-		<h1>Advanced</h1>
-	<div>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<ul>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-		</ul>
-	</div>
-		<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
+				<h1>Advanced</h1>
+				<div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<ul>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+					</ul>
+				</div>
+				<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
 			</article>
 			<article class="leistung-box">
-		<h1>Professional</h1>
-	<div>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		<ul>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-			<li>Lorem ipsum dolor sit amet</li>
-		</ul>
-	</div>
-		<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
+				<h1>Professional</h1>
+				<div>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<ul>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+						<li>Lorem ipsum dolor sit amet</li>
+					</ul>
+				</div>
+				<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
 			</article>
+		</div>
+	</section>
+
+	<!--=== NAVIGATIONSLEISTE - FOOTER NEU ===-->
+	<footer>
+		<nav id="foot-nav">
+			<div class="row">
+				<div class="col-6">
+					<span>&copy; Webdesign by Schadler & Wiesinger (2020)</span>
+					<ul>
+						<li><a href="datenschutz.html">Datenschutzerklärung</a></li>
+						<li><a href="impressum.html">Impressum</a></li>
+					</ul>
+				</div>
 			</div>
-</section>
+		</nav>
+	</footer>
 
-<!-- === FOOTER === -->
 
-<footer id="footer">
 
-<div id="container">
-	<div class="row">
-		<div class="col-6">
-			<span>WEBDESIGN by SCHADLER & WIESINGER (2020)</span>
-			<nav id="footer-nav">
-			<a href="impressum.html">Impressum</a>
-			</nav>
+
+
+	<!-- === FOOTER ALT
+	<footer id="footer">
+		<div id="container">
+			<div class="row">
+				<div class="col-6">
+					<span>WEBDESIGN by SCHADLER & WIESINGER (2020)</span>
+					<nav id="footer-nav">
+						<a href="impressum.html">Impressum</a>
+					</nav>
+				</div>
 			</div>
 		</div>
-	</div>
-</footer>
-	</body>
+	</footer>
+		=== -->
+
+
+</body>
 
 </html>

@@ -16,13 +16,9 @@
 	<meta name="msapplication-TileColor" content="#f0f0f0">
 	<meta name="msapplication-config" content="./src/img/favicon/browserconfig.xml">
 	<meta name="theme-color" content="#f0f0f0">
-
-	<!-- === FONTS===
-		<link rel="stylesheet" type="text/css" href="./src/css/styles.css">
-		-->
-
 	<link rel="stylesheet" type="text/css" href="./src/css/styles.min.css">
 </head>
+
 <body>
 
 	<!--=== NAVIGATIONSLEISTE ===-->
@@ -35,7 +31,7 @@
 				<div class="col-6">
 					<a href="index.html" class="logo-link"><img src="src/img/webdesign-logo.png" alt="Das Logo von webdesign" id="logo-picture"></a>
 
-					<!--=== Emmet - CODE     ul>li*4>a    ===-->
+					<!--=== Emmet - CODE        ul>li*4>a    ===-->
 					<ul>
 						<li class="active"><a href="index.html">Startseite</a></li>
 						<li><a href="leistungen.html">Leistungen</a></li>
@@ -74,26 +70,26 @@
 	<!-- ==== HEADER-BANNER === -->
 
 	<header id="header-banner">
-		<img src="./src/img/hintergrund.jpg" id="header-picture" alt="Headerbild" />
+		<img src="./src/img/hintergrund-neu.png" id="header-picture" class="parallax-picture" alt="Headerbild" />
 	</header>
 
 
 
-	<!-- === LOGO === -->
-
-	<div id="animiertes-logo">
-		<img src="./src/img/webdesign-logo-klein.png" alt="Logo WebDesign made simple">
-	</div>
 
 	<!-- === LEISTUNGEN - BEREICH === -->
-
 	<section id="leistungen-bereich">
+		
+
 
 		<div class="container">
 			<div class="row">
 				<div class="col-6">
 					<header class="intro-container">
 						<h1>WebDesign made simple</h1>
+						<!-- === LOGO === -->
+						<div id="animiertes-logo">
+							<img src="./src/img/webdesign-logo-klein.png" alt="Logo WebDesign made simple">
+						</div>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					</header>
 				</div>
@@ -314,22 +310,22 @@
 	</footer>
 
 		=== -->
-
-
-
-	<!--=== NAVIGATIONSLEISTE ===-->
-	<nav id="foot-nav">
-		<div class="row">
-			<div class="col-6">
-				<span>Webdesign by Schadler & Wiesinger (2020)</span>
-				<ul>
-					<li><a href="datenschutz.html">Datenschutzerklärung</a></li>
-					<li><a href="impressum.html">Impressum</a></li>
-				</ul>
+	<!--=== NAVIGATIONSLEISTE - FOOTER NEU ===-->
+	<footer>
+		<nav id="foot-nav">
+			<div class="row">
+				<div class="col-6">
+					<span>&copy; Webdesign by Schadler & Wiesinger (2020)</span>
+					<ul>
+						<li><a href="datenschutz.html">Datenschutzerklärung</a></li>
+						<li><a href="impressum.html">Impressum</a></li>
+					</ul>
+				</div>
 			</div>
-		</div>
-	</nav>
-
+		</nav>
+	</footer>
+	<script src="src/script/simpleParallax.js"></script>
+	<script src="src/script/all.js"></script>
 </body>
 
 </html>

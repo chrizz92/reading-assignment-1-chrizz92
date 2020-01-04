@@ -8,7 +8,7 @@ Christian:
 		(ERLEDIGT)Sticky-Effekt?
 
 	Startseite:
-		Anordnung prüfen
+		(ERLEDIGT)Anordnung prüfen
 		Newsletter-Anmeldung:
 			(ERLEDIGT)Newsletter-Anmeldung zwischen "Unser Service" und "Das sind wir"
 			Funktionalität hinzufügen

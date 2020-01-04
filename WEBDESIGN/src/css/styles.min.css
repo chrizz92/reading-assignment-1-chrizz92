@@ -76,21 +76,21 @@ section{
 
 @media(max-width: 1366px){
 	section{
-		padding-top: 2rem;
+
 		padding-bottom: 2rem;
 	}
 }
 
 @media(max-width: 1024px){
 	section{
-		padding-top: 1.5rem;
+
 		padding-bottom: 1.5rem;
 	}
 }
 
 @media(max-width: 768px){
 	section{
-		padding-top: 0.5rem;
+
 		padding-bottom: 0.5rem;
 	}
 }
@@ -186,7 +186,7 @@ section{
 	height: 50px;
 	background-color: #3d3f45;
 	position: fixed;
-	z-index: 1;
+	z-index: 2;
 	font-weight: bold;
 	font-size: 1.1rem;
 }
@@ -200,7 +200,7 @@ section{
 
 #header-nav ul{
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 	margin: 0;
 	padding: 0;
 	float: right;
@@ -322,190 +322,128 @@ section{
 	padding-top: 50px;
 	position: relative;
 	width: 100%;
-	height: 100%;
+	height: 100%;	
 }
 
 #header-picture{
 	position: relative;
+	z-index: 0;
 	width: 100%;
-	height: 100%;
+	margin-top: -10%;
 }
 
-#newsletter-bereich{
-	width: 100%;
-	background-color: #3d3f45;
-	padding-bottom: 0;
-	padding-top: 0;
+#leistungen-bereich{
+	position: relative;
+	z-index: 1;
+	background-color: #ffffff;
+	margin-top: -200px;
 }
 
-#nb-werbetext{
-	color: #FFF;
-	font-size: 1.2rem;
-}
-
-#nb-form{
-	margin-top: 0.7rem;
-	text-align: right;
-}
-
-.nb-email-input{
-	width: 60%;
-	height: 35px;
-	border: 2px solid #FFF;
-	padding: 0.4rem;
-}
-
-#nb-button{
-	height: 35px;
-}
-
-@media(max-width: 1822px){
-	.nb-email-input{
-		width: 70%;
-	}
-}
-
-@media(max-width: 1358px){
-	.nb-email-input{
-		width: 100%;
-		margin-bottom: 0.5rem;
-	}
-
-	#nb-button{
-		width: 100%;
-	}
-}
-
-@media(max-width: 768px){
-	#nb-werbetext{
-		display: none;
-	}
-
-	#nb-form{
-		margin-top: 0;
-	}
-
-	#nb-newsletter-bereich .col-4{
-		display: none;
-	}
-}
-
-@media(max-width: 480px){
-	.nb-email-input{
-		height: 25px;
-	}
-
-	#nb-button{
-		height: 25px;
-		padding: 0.1rem;
-	}
-}
-
-@-webkit-keyframes logoAnimation{
-	0%{
+@-webkit-keyframes logoAnimation {
+	0% {
 		-webkit-transform: rotateZ(0deg);
 		transform: rotateZ(0deg);
 	}
 
-	11.111%{
+	11.111% {
 		-webkit-transform: rotateZ(0deg);
 		transform: rotateZ(0deg);
 	}
 
-	22.222%{
+	22.222% {
 		-webkit-transform: rotateZ(90deg);
 		transform: rotateZ(90deg);
 	}
 
-	33.333%{
+	33.333% {
 		-webkit-transform: rotateZ(90deg);
 		transform: rotateZ(90deg);
 	}
 
-	44.444%{
+	44.444% {
 		-webkit-transform: rotateZ(180deg);
 		transform: rotateZ(180deg);
 	}
 
-	55.555%{
+	55.555% {
 		-webkit-transform: rotateZ(180deg);
 		transform: rotateZ(180deg);
 	}
 
-	66.666%{
+	66.666% {
 		-webkit-transform: rotateZ(270deg);
 		transform: rotateZ(270deg);
 	}
 
-	77.777%{
+	77.777% {
 		-webkit-transform: rotateZ(270deg);
 		transform: rotateZ(270deg);
 	}
 
-	88.888%{
+	88.888% {
 		-webkit-transform: rotateZ(360deg);
 		transform: rotateZ(360deg);
 	}
 
-	100%{
-		-webkit-transform: rotateZ(360deg);
-		transform: rotateZ(360deg);
-		}
-}
-
-@keyframes logoAnimation{
-	0%{
-		-webkit-transform: rotateZ(0deg);
-		transform: rotateZ(0deg);
-	}
-
-	11.111%{
-		-webkit-transform: rotateZ(0deg);
-		transform: rotateZ(0deg);
-	}
-
-	22.222%{
-		-webkit-transform: rotateZ(90deg);
-		transform: rotateZ(90deg);
-	}
-
-	33.333%{
-		-webkit-transform: rotateZ(90deg);
-		transform: rotateZ(90deg);
-	}
-
-	44.444%{
-		-webkit-transform: rotateZ(180deg);
-		transform: rotateZ(180deg);
-	}
-
-	55.555%{
-		-webkit-transform: rotateZ(180deg);
-		transform: rotateZ(180deg);
-	}
-
-	66.666%{
-		-webkit-transform: rotateZ(270deg);
-		transform: rotateZ(270deg);
-	}
-
-	77.777%{
-		-webkit-transform: rotateZ(270deg);
-		transform: rotateZ(270deg);
-	}
-
-	88.888%{
-		-webkit-transform: rotateZ(360deg);
-		transform: rotateZ(360deg);
-	}
-
-	100%{
+	100% {
 		-webkit-transform: rotateZ(360deg);
 		transform: rotateZ(360deg);
 	}
 }
 
-#animiertes-logo{
+@keyframes logoAnimation {
+	0% {
+		-webkit-transform: rotateZ(0deg);
+		transform: rotateZ(0deg);
+	}
+
+	11.111% {
+		-webkit-transform: rotateZ(0deg);
+		transform: rotateZ(0deg);
+	}
+
+	22.222% {
+		-webkit-transform: rotateZ(90deg);
+		transform: rotateZ(90deg);
+	}
+
+	33.333% {
+		-webkit-transform: rotateZ(90deg);
+		transform: rotateZ(90deg);
+	}
+
+	44.444% {
+		-webkit-transform: rotateZ(180deg);
+		transform: rotateZ(180deg);
+	}
+
+	55.555% {
+		-webkit-transform: rotateZ(180deg);
+		transform: rotateZ(180deg);
+	}
+
+	66.666% {
+		-webkit-transform: rotateZ(270deg);
+		transform: rotateZ(270deg);
+	}
+
+	77.777% {
+		-webkit-transform: rotateZ(270deg);
+		transform: rotateZ(270deg);
+	}
+
+	88.888% {
+		-webkit-transform: rotateZ(360deg);
+		transform: rotateZ(360deg);
+	}
+
+	100% {
+		-webkit-transform: rotateZ(360deg);
+		transform: rotateZ(360deg);
+	}
+}
+
+#animiertes-logo {
 	height: 150px;
 	width: 150px;
 	background-color: #3d3f45;
@@ -516,7 +454,7 @@ section{
 	padding: 25px;
 }
 
-#animiertes-logo img{
+#animiertes-logo img {
 	display: block;
 	width: 100px;
 	height: 100px;
@@ -526,14 +464,10 @@ section{
 	animation: logoAnimation 5s ease-in-out infinite alternate;
 }
 
-@media(max-width: 768px){
-	#animiertes-logo{
+@media(max-width: 768px) {
+	#animiertes-logo {
 		display: none;
 	}
-}
-
-#leistungen-bereich{
-	padding-top: 1rem;
 }
 
 .leistungs-box{
@@ -723,6 +657,77 @@ section{
 	}
 }
 
+
+#newsletter-bereich {
+	width: 100%;
+	background-color: #3d3f45;
+	padding-bottom: 0;
+	padding-top: 0;
+}
+
+#nb-werbetext {
+	color: #FFF;
+	font-size: 1.2rem;
+}
+
+#nb-form {
+	margin-top: 0.7rem;
+	text-align: right;
+}
+
+.nb-email-input {
+	width: 60%;
+	height: 35px;
+	border: 2px solid #FFF;
+	padding: 0.4rem;
+}
+
+#nb-button {
+	height: 35px;
+}
+
+@media(max-width: 1822px) {
+	.nb-email-input {
+		width: 70%;
+	}
+}
+
+@media(max-width: 1358px) {
+	.nb-email-input {
+		width: 100%;
+		margin-bottom: 0.5rem;
+	}
+
+	#nb-button {
+		width: 100%;
+	}
+}
+
+@media(max-width: 768px) {
+	#nb-werbetext {
+		display: none;
+	}
+
+	#nb-form {
+		margin-top: 0;
+	}
+
+	#nb-newsletter-bereich .col-4 {
+		display: none;
+	}
+}
+
+@media(max-width: 480px) {
+	.nb-email-input {
+		height: 25px;
+	}
+
+	#nb-button {
+		height: 25px;
+		padding: 0.1rem;
+	}
+}
+
 #über-uns-bereich{
 	background-color: #FFF;
 }
@@ -879,7 +884,7 @@ section{
 	background-color: #3d3f45;
 	position: relative;
 	font-weight: bold;
-	font-size: 1.1rem;
+	font-size: 1rem;
 
 }
 
@@ -889,6 +894,7 @@ section{
 
 #foot-nav span {
 	color: #ffffff;
+	font-weight: normal;
 	height: 30px;
 	width: auto;
 	padding-top: 0.8em;
@@ -897,7 +903,7 @@ section{
 
 #foot-nav ul {
 	position: relative;
-	z-index: 1;
+	z-index: 2;
 	margin: 0;
 	padding: 0;
 	float: right;
@@ -958,6 +964,13 @@ section{
 	#footer span{
 		display: none;
 	}
+}
+
+#leistungen1{
+	position: relative;
+	z-index: 1;
+	margin-top: -200px;
+	background-color: #ffffff;
 }
 
 .leistung{
@@ -1126,7 +1139,11 @@ section{
 }
 
 #kontakt-bereich{
+	position: relative;
+	z-index: 1;
 	padding-top: 1rem;
+	background-color: #ffffff;
+	margin-top: -200px;
 }
 
 #kontakt-formular input,#kontakt-formular textarea{
@@ -1189,18 +1206,23 @@ section{
 }
 
 #impressum{
-	background-color: #f0f0f0;
+	position: relative;
+	z-index: 1;
+	background-color: #ffffff;
 	padding-top: 1rem;
 	text-align: left;
+	margin-top: -200px;
 }
 
-#impressum{
+#impressum-container{
+	background-color: #f0f0f0;
 	position: relative;
-	z-index: 0;
+	z-index: 2;
 	width: 80%;
 	margin-right: auto;
 	margin-left: auto;
 }
+
 
 #impressum a{
 	color: #3d3f45;
@@ -1216,6 +1238,7 @@ section{
 	width: 95%;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 0;
 }
 
 .row::after{
@@ -1285,6 +1308,24 @@ section{
 	}
 	.col-4{
 		width: 100%;
+	}
+}
+
+@media(max-width: 768px) {
+	#leistungen-bereich {
+		margin-top: 0;
+	}
+
+	#impressum {
+		margin-top: 0;
+	}
+
+	#kontakt-bereich {
+		margin-top: 0;
+	}
+
+	#leistungen1 {
+		margin-top: 0;
 	}
 }
 
