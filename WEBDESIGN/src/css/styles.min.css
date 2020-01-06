@@ -1166,12 +1166,18 @@ section{
 	font-weight: normal;
 }
 
+
+
 #kontakt-bereich{
 	position: relative;
 	z-index: 1;
 	padding-top: 1rem;
 	background-color: #ffffff;
 	margin-top: -200px;
+}
+
+#kontakt-formular .col-6{
+	margin-bottom: 1rem;
 }
 
 #kontakt-formular input,#kontakt-formular textarea{
@@ -1193,6 +1199,26 @@ section{
 	border: 2px solid #a62c21;
 }
 
+#kontakt-formular .button-typ-1 {
+	padding: 1rem 2rem;
+	font-weight: bold;
+	font-size: large;
+	-webkit-transition: color 0.5s ease-in-out,border 0.5s ease-in-out;
+	transition: color 0.5s ease-in-out,border 0.5s ease-in-out;
+}
+
+#kontakt-formular .button-typ-1:hover {
+	color: #3d3f45;
+	background-color: #f0f0f0;
+	border: 2px solid #a62c21;
+
+}
+
+#kontakt-formular .button-typ-1:focus {
+	outline: 0;
+	box-shadow: 0 0 2px 2px #f0f0f0, 0 0 10px #f0f0f0;
+}
+
 .button-typ-3{
 	border: 2px solid #3d3f45;
 	background-color: transparent;
@@ -1200,8 +1226,8 @@ section{
 	color: #3d3f45;
 	width: 150px;
 	height: 39px;
-	-webkit-transition: border 0.5s ease-in-out;
-	transition: border 0.5s ease-in-out;
+	-webkit-transition: border 2s ease-in-out;
+	transition: border 2s ease-in-out;
 }
 
 .button-typ-3:hover{
@@ -1350,13 +1376,14 @@ section{
 		background-color: #f0f0f0;
 		font-weight: bold;
 		width: 100%;
+		text-align: center;
 	}
 }
 
 
 
 
-@media(max-width: 768px) {
+@media(max-width: 1280px) {
 	#leistungen-bereich {
 		margin-top: 0;
 	}
@@ -1369,7 +1396,7 @@ section{
 		margin-top: 0;
 	}
 
-	#leistungen {
+	#leistungen1 {
 		margin-top: 0;
 	}
 
