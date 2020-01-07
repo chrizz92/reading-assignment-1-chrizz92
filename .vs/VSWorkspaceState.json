@@ -1,9 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\TESTSEITE",
-    "\\TESTSEITE\\CSS"
+    "\\WEBDESIGN",
+    "\\WEBDESIGN\\src\\css",
+    "\\WEBDESIGN\\src\\script"
   ],
-  "SelectedNode": "\\.gitignore",
+  "SelectedNode": "\\WEBDESIGN\\datenschutz.html",
   "PreviewInSolutionExplorer": false
 }

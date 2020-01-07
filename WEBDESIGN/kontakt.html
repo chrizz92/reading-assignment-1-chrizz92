@@ -14,23 +14,23 @@
 	<meta name="msapplication-TileColor" content="#f0f0f0">
 	<meta name="msapplication-config" content="./src/img/favicon/browserconfig.xml">
 	<meta name="theme-color" content="#f0f0f0">
-	<link rel="stylesheet" type="text/css" href="src/css/styles.css">
+	<!--<link rel="stylesheet" type="text/css" href="src/css/styles.css">-->
 	<link rel="stylesheet" type="text/css" href="src/css/styles.min.css">
 </head>
 
-	<body>
-		<!--=== NAVIGATIONSLEISTE ===-->
-		<nav id="header-nav">
+<body>
+	<!--=== NAVIGATIONSLEISTE ===-->
+	<nav id="header-nav">
 
 		<!--=== NAVIGATIONSLEISTE Skalierbar machen!!!
 		div.container>div.row>div.col-6 ===-->
 
-			<div class="container" id="desktop-nav">
-				<div class="row">
-					<div class="col-6">
-						<a href="index.html" class="logo-link"><img src="src/img/webdesign-logo.png" alt="Das Logo von webdesign"></a>
+		<div class="container" id="desktop-nav">
+			<div class="row">
+				<div class="col-6">
+					<a href="index.html" class="logo-link"><img src="src/img/webdesign-logo.png" alt="Das Logo von webdesign"></a>
 
-						<!--=== ul>li*4>a (Eingabe mit Emmet) ===-->
+					<!--=== ul>li*4>a (Eingabe mit Emmet) ===-->
 					<ul>
 						<li><a href="index.html">Startseite</a></li>
 						<li><a href="leistungen.html">Leistungen</a></li>
@@ -38,101 +38,121 @@
 						<li><a href="impressum.html">Impressum</a></li>
 					</ul>
 
+				</div>
+			</div>
+		</div>
+
+		<div class="container" id="mobile-nav">
+			<div class="row">
+				<div class="col-6">
+					<a href="index.html" class="logo-link"><img src="src/img/webdesign-logo.png" alt="Das Logo von webdesign"></a>
+
+					<!--===BUTTON===-->
+					<div class="clearfix" id="mobile-nav-dropdown">
+						<div id="mobile-nav-botton"><span>&equiv;</span></div>
+
+						<div class="clearfix" id="mobile-nav-content">
+							<!--=== ul>li*4>a (Eingabe mit Emmet)  ===-->
+							<ul>
+								<li><a href="index.html">Startseite</a></li>
+								<li><a href="leistungen.html">Leistungen</a></li>
+								<li class="active"><a href="kontakt.html">Kontakt</a></li>
+								<li><a href="impressum.html">Impressum</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
+		</div>
+	</nav>
+	<!-- ==== HEADER-BANNER === -->
 
-			<div class="container" id="mobile-nav">
+	<header id="header-banner">
+		<img src="./src/img/hintergrund-neu.png" id="header-picture" alt="Headerbild" />
+		<p id="small-display-text">Diese Webseite<br />wurde für eine<br /> Bildschirmbreite größer<br /> gleich 320px optimiert.<br /> Möglicherweise sind<br /> nicht alle Features<br />optimal nutzbar.</p>
+	</header>
+
+	<!-- ==== KONTAKT - BEREICH === -->
+
+	<section id="kontakt-bereich">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-6">
+					<header class="intro-container">
+						<h1>Kontakt</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</header>
+				</div>
+			</div>
+			<form id="kontakt-formular" method="post">
 				<div class="row">
 					<div class="col-6">
-						<a href="index.html" class="logo-link"><img src="src/img/webdesign-logo.png" alt="Das Logo von webdesign"></a>
+						<label for="vorname" class="screenreader">Vorname:</label>
+						<input id="vorname" type="text" name="vorname" placeholder="Vorname">
+					</div>
+					<div class="col-6">
+						<label for="nachname" class="screenreader">Nachname:</label>
+						<input id="nachname" value="" type="text" name="nachname" placeholder="Nachname">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<label for="email" class="screenreader">E-Mail:</label>
+						<input id="email" type="text" name="email" placeholder="E-Mail"
+							   pattern="[/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/,]};"
+							   title="Please enter a valid email address">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<label for="nachricht" class="screenreader">Nachricht:</label>
+						<textarea id="nachricht" name="nachricht" placeholder="Nachricht"></textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-6">
+						<button class="button-typ-1" id="kontakt-submit" type="submit" name="absenden-button">Senden</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</section>
 
-		<!--===BUTTON===-->
-		<div class="clearfix" id="mobile-nav-dropdown">
-			<div id="mobile-nav-botton"><span>&equiv;</span></div>
 
-			<div class="clearfix" id="mobile-nav-content">
-					<!--=== ul>li*4>a (Eingabe mit Emmet)  ===-->
-				<ul>
-					<li><a href="index.html">Startseite</a></li>
-					<li><a href="leistungen.html">Leistungen</a></li>
-					<li class="active"><a href="kontakt.html">Kontakt</a></li>
-					<li><a href="impressum.html">Impressum</a></li>
-				</ul>
+
+	<!-- === FOOTER ALT
+			<footer id="footer">
+
+		<div id="container">
+			<div class="row">
+				<div class="col-6">
+					<span>WEBDESIGN by SCHADLER & WIESINGER (2020)</span>
+					<nav id="footer-nav">
+						<a href="impressum.html">Impressum</a>
+					</nav>
+				</div>
 			</div>
 		</div>
-					</div>
+	</footer>
+		=== -->
+	<!--=== NAVIGATIONSLEISTE - FOOTER NEU ===-->
+	<footer>
+		<nav id="foot-nav">
+			<div class="row">
+				<div class="col-6">
+					<span>&copy; Webdesign by Schadler & Wiesinger (2020)</span>
+					<ul>
+						<li><a href="datenschutz.html">Datenschutzerklärung</a></li>
+						<li><a href="impressum.html">Impressum</a></li>
+					</ul>
 				</div>
 			</div>
 		</nav>
-<!-- ==== HEADER-BANNER === -->
+	</footer>
+	<script src="src/script/jquery-3.4.1.js"></script>
+	<script src="src/script/all.js"></script>
 
-<header id="header-banner-klein"></header>
-
-<!-- ==== KONTAKT - BEREICH === -->
-
-<section id="kontakt-bereich">
-
-<div class="container">
-	<div class="row">
-		<div class="col-6">
-			<header class="intro-container">
-				<h1>Kontakt</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</header>
-			</div>
-		</div>
-		<form id="kontakt-formular" action="kontakt.html" method="post">
-			<div class="row">
-				<div class="col-3">
-					<label for="vorname" class="screenreader">Vorname:</label>
-					<input id="vorname" type="text" name="vorname" placeholder="Vorname">
-				</div>
-				<div class="col-3">
-					<label for="nachname" class="screenreader">Nachname:</label>
-					<input id="nachname" type="text" name="nachname" placeholder="Nachname">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-6">
-					<label for="email" class="screenreader">E-Mail:</label>
-					<input id="email" type="text" name="email" placeholder="E-Mail"
-					pattern="[/^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/,]};"
-					title="Please enter a valid email address">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-6">
-					<label for="nachricht" class="screenreader">Nachricht:</label>
-					<textarea id="nachricht" name="nachricht" placeholder="Nachricht"></textarea>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-6">
-					<button class="button-typ-3" type="submit" name="absenden-button">Senden</button>
-				</div>
-			</div>
-		</form>
-	</div>
-</section>
-
-
-
-<!-- === FOOTER === -->
-
-<footer id="footer">
-
-<div id="container">
-	<div class="row">
-		<div class="col-6">
-			<span>WEBDESIGN by SCHADLER & WIESINGER (2020)</span>
-			<nav id="footer-nav">
-			<a href="impressum.html">Impressum</a>
-			</nav>
-			</div>
-		</div>
-	</div>
-</footer>
-	</body>
+</body>
 
 </html>
