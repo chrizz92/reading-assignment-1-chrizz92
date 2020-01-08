@@ -1407,8 +1407,10 @@ section{
 	#foot-nav .col-6 ul {
 		/*margin-top: 20px;*/
 	}
+}
 
-	#foot-nav ul{
+@media(max-width: 678px){
+	#foot-nav ul {
 		float: left;
 	}
 }
