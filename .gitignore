@@ -64,4 +64,10 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Visual Studio
+*.lnk
+*.suo
+slnx.sqlite
+VSWorkspaceState.json
+
 # End of https://www.gitignore.io/api/linux,macos,windows

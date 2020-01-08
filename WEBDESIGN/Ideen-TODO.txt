@@ -1,3 +1,9 @@
+GENEREL:
+	validator.w3.org
+
+
+
+
 Christian:
 	Allgemein:
 		(ERLEDIGT)Neuer Blauton #3484E5
