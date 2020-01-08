@@ -69,7 +69,7 @@ $(document).ready(function () {
 	}
 
 	function sendForm(leistung, edition) {
-		alert("Funktion sendForm()\n"+leistung + "\n" + edition);		
+		alert("Das ist die "+"Funktion sendForm()\n"+leistung + "\n" + edition);		
 	}
 });
 
