@@ -1,37 +1,36 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Leistungen</title>
-	<link rel="apple-touch-icon" sizes="180x180" href="./src/img/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="./src/img/favicon/favicon-16x16.png">
-	<link rel="manifest" href="./src/img/favicon/site.webmanifest">
-	<link rel="mask-icon" href="./src/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
-	<link rel="shortcut icon" href="./src/img/favicon/favicon.ico">
-	<meta name="msapplication-TileColor" content="#f0f0f0">
-	<meta name="msapplication-config" content="./src/img/favicon/browserconfig.xml">
-	<meta name="theme-color" content="#f0f0f0">
-	<!--<link rel="stylesheet" type="text/css" href="src/css/styles.css">-->
-	<link rel="stylesheet" type="text/css" href="./src/css/styles.min.css">
-	<script src="src/script/jquery-3.4.1.js"></script>
-	<script src="src/script/all.js"></script>
-</head>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Leistungen</title>
+		<link rel="apple-touch-icon" sizes="180x180" href="./src/img/favicon/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./src/img/favicon/favicon-16x16.png">
+		<link rel="manifest" href="./src/img/favicon/site.webmanifest">
+		<link rel="mask-icon" href="./src/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+		<link rel="shortcut icon" href="./src/img/favicon/favicon.ico">
+		<meta name="msapplication-TileColor" content="#f0f0f0">
+		<meta name="msapplication-config" content="./src/img/favicon/browserconfig.xml">
+		<meta name="theme-color" content="#f0f0f0">
+
+		<link rel="stylesheet" type="text/css" href="./src/css/styles.min.css">
+	</head>
 <body>
-	<!--=== NAVIGATIONSLEISTE ===-->
+<!--=== NAVIGATIONSLEISTE ===-->
+
 	<nav id="header-nav">
 
-		<!--=== NAVIGATIONSLEISTE Skalierbar machen!!!
-		div.container>div.row>div.col-6 ===-->
+<!--=== NAVIGATIONSLEISTE Skalierbar machen!!!
+div.container>div.row>div.col-6 ===-->
 
-		<div class="container" id="desktop-nav">
-			<div class="row">
-				<div class="col-6">
-					<a href="index.html" class="logo-link"><img src="src/img/webdesign-logo.png" alt="Das Logo von webdesign"></a>
+			<div class="container" id="desktop-nav">
+				<div class="row">
+					<div class="col-6">
+						<a href="index.html" class="logo-link"><img src="src/img/webdesign-logo.png" alt="Das Logo von webdesign"></a>
 
-					<!--=== ul>li*4>a (Eingabe mit Emmet) ===-->
+						<!--=== ul>li*4>a (Eingabe mit Emmet) ===-->
 					<ul>
 						<li><a href="index.html">Startseite</a></li>
 						<li class="active"><a href="leistungen.html">Leistungen</a></li>
@@ -39,320 +38,292 @@
 						<li><a href="impressum.html">Impressum</a></li>
 					</ul>
 
-				</div>
-			</div>
-		</div>
-
-		<div class="container" id="mobile-nav">
-			<div class="row">
-				<div class="col-6">
-					<a href="index.html" class="logo-link"><img src="src/img/webdesign-logo.png" alt="Das Logo von webdesign"></a>
-
-					<!--===BUTTON===-->
-					<div class="clearfix" id="mobile-nav-dropdown">
-						<div id="mobile-nav-botton"><span>&equiv;</span></div>
-
-						<div class="clearfix" id="mobile-nav-content">
-							<!--=== ul>li*4>a (Eingabe mit Emmet)  ===-->
-							<ul>
-								<li><a href="index.html">Startseite</a></li>
-								<li class="active"><a href="leistungen.html">Leistungen</a></li>
-								<li><a href="kontakt.html">Kontakt</a></li>
-								<li><a href="impressum.html">Impressum</a></li>
-							</ul>
-						</div>
 					</div>
 				</div>
 			</div>
+
+			<div class="container" id="mobile-nav">
+				<div class="row">
+					<div class="col-6">
+						<a href="index.html" class="logo-link"><img src="src/img/webdesign-logo.png" alt="Das Logo von webdesign"></a>
+
+		<!--===BUTTON===-->
+		<div class="clearfix" id="mobile-nav-dropdown">
+			<div id="mobile-nav-botton"><span>&equiv;</span></div>
+
+			<div class="clearfix" id="mobile-nav-content">
+					<!--=== ul>li*4>a (Eingabe mit Emmet)  ===-->
+				<ul>
+					<li><a href="index.html">Startseite</a></li>
+					<li class="active"><a href="leistungen.html">Leistungen</a></li>
+					<li><a href="kontakt.html">Kontakt</a></li>
+					<li><a href="impressum.html">Impressum</a></li>
+				</ul>
+			</div>
 		</div>
-	</nav>
-
-
-	<header id="header-banner">
-		<img src="./src/img/hintergrund-neu.png" id="header-picture" alt="Headerbild" />
-		<p id="small-display-text">Diese Webseite<br />wurde für eine<br /> Bildschirmbreite größer<br /> gleich 320px optimiert.<br /> Möglicherweise sind<br /> nicht alle Features<br />optimal nutzbar.</p>
-	</header>
-
-	<!-- === LEISTUNGEN - SEITE === -->
-	<section class="leistung" id="leistungen1">
-		<div class="flex-container">
-			<header class="intro-container">
-				<h1 id="leistungsheader">Unsere Leistungen im Überblick</h1>
-				<h1>Leistung #1</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</header>
-		</div>
-		<div class="flex-container">
-
-			<article class="leistung-box">
-				<h1>Basic</h1>
-				<div>
-					<p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<ul>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-					</ul>
-				</div>
-				<button type="button" id="leistung-1-basic" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
-			</article>
-			<article class="leistung-box leistung-box-empfohlen">
-				<h1>Advanced</h1>
-				<div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<ul>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-					</ul>
-				</div>
-				<button type="button" id="leistung-1-adv" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
-			</article>
-			<article class="leistung-box">
-				<h1>Professional</h1>
-				<div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<ul>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-					</ul>
-				</div>
-				<button type="button" id="leistung-1-pro" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
-			</article>
-		</div>
-	</section>
-
-	<!-- === Leistungen === -->
-	<section class="leistung" id="leistungen2">
-
-		<div class="flex-container">
-			<header class="intro-container">
-				<h1>Leistung #2</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</header>
-		</div>
-		<div class="flex-container">
-
-			<article class="leistung-box">
-				<h1>Basic</h1>
-				<div>
-					<p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<ul>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-					</ul>
-				</div>
-				<button type="button" id="leistung-2-basic" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
-			</article>
-			<article class="leistung-box leistung-box-empfohlen">
-				<h1>Advanced</h1>
-				<div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<ul>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-					</ul>
-				</div>
-				<button type="button" id="leistung-2-adv" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
-			</article>
-			<article class="leistung-box">
-				<h1>Professional</h1>
-				<div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<ul>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-					</ul>
-				</div>
-				<button type="button" id="leistung-2-pro" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
-			</article>
-		</div>
-	</section>
-
-	<!-- === Leistungen === -->
-	<section class="leistung" id="leistungen3">
-
-		<div class="flex-container">
-			<header class="intro-container">
-				<h1>Leistung #3</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</header>
-		</div>
-		<div class="flex-container">
-
-			<article class="leistung-box">
-				<h1>Basic</h1>
-				<div>
-					<p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<ul>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-					</ul>
-				</div>
-				<button type="button" id="leistung-3-basic" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
-			</article>
-			<article class="leistung-box leistung-box-empfohlen">
-				<h1>Advanced</h1>
-				<div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<ul>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-					</ul>
-				</div>
-				<button type="button" id="leistung-3-adv" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
-			</article>
-			<article class="leistung-box">
-				<h1>Professional</h1>
-				<div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<ul>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-					</ul>
-				</div>
-				<button type="button" id="leistung-3-pro" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
-			</article>
-		</div>
-	</section>
-
-	<!-- === Leistungen === -->
-	<section class="leistung" id="leistungen4">
-
-		<div class="flex-container">
-			<header class="intro-container">
-				<h1>Leistung #4</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			</header>
-		</div>
-		<div class="flex-container">
-
-			<article class="leistung-box">
-				<h1>Basic</h1>
-				<div>
-					<p>consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<ul>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-					</ul>
-				</div>
-				<button type="button" id="leistung-4-basic" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
-			</article>
-			<article class="leistung-box leistung-box-empfohlen">
-				<h1>Advanced</h1>
-				<div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<ul>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-					</ul>
-				</div>
-				<button type="button" id="leistung-4-adv" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
-			</article>
-			<article class="leistung-box">
-				<h1>Professional</h1>
-				<div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-					<ul>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-						<li>Lorem ipsum dolor sit amet</li>
-					</ul>
-				</div>
-				<button type="button" id="leistung-4-pro" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
-			</article>
-		</div>
-	</section>
-
-	<!--=== NAVIGATIONSLEISTE - FOOTER NEU ===-->
-	<footer>
-		<nav id="foot-nav">
-			<div class="row">
-				<div class="col-6">
-					<span>&copy; Webdesign by Schadler & Wiesinger (2020)</span>
-					<ul>
-						<li><a href="datenschutz.html">Datenschutzerklärung</a></li>
-						<li><a href="impressum.html">Impressum</a></li>
-					</ul>
+					</div>
 				</div>
 			</div>
 		</nav>
-	</footer>
 
 
+<header id="header-banner-klein"></header>
+
+<!-- === LEISTUNGEN - SEITE === -->
+
+<section class="leistung" id="leistungen1">
+
+	<div class="flex-container">
+		<header class="intro-container">
+			<h1>Die Vorteile von Responsive Webdesign</h1>
+			<p>Eine Webseite soll nicht nur Aufmerksamkeit erzeugen – Eine Website soll einen perfekten ersten Eindruck auf Ihre Kunden machen, Interesse wecken und zur Interaktion einladen – und das auf jedem Kommunikationsgerät: Mobilität ist das Gebot der Stunde. Responsive Webdesign bietet Ihnen die geeignete Antwort auf die stetig steigenden Anforderungen an Webseiten.  Ihre Besucher werden Ihnen keine zweite Chance geben, ihren ersten Eindruck zu korrigieren.</p>
+		</header>
+	</div>
+<div class="flex-container">
+
+	<article class="leistung-box">
+		<h1>Basic</h1>
+	<div>
+		<p>Das Design der Webseite selbst umfasst eine moderne und suchmaschinenfreundliche Struktur, eine leichte, intuitiv erschließbare Bedienbarkeit, schnelle Ladezeiten und ein ansprechendes Layout. Darüber hinaus spielen weitere Kriterien wichtige Rollen für einschlägigen Suchmaschinen: Die Homepage muss mit verschiedenen Browsern schnell und zuverlässig funktionieren, vor allem aber inhaltlich einen echten Mehrwert für die Besucher bieten. </p>
+		<ul>
+			<li>Zukunftssichere Websites</li>
+			<li>Besseres Google Ranking</li>
+			<li>Kunden und Zielgruppe besser erreichen</li>
+			<li>Abgrenzung von Wettbewerbern</li>
+		</ul>
+	</div>
+		<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
+			</article>
+			<article class="leistung-box leistung-box-empfohlen">
+		<h1>Advanced</h1>
+	<div>
+		<p>Als Spezialisten für responsive Webdesign, Suchmaschinenoptimierung und Online-Marketing bringen wir die Kreativität mit, die unser Webdesign von anderen abhebt. Ebenso wichtig ist aber das technologische Know-how, das wir permanent weiter entwickeln: Sowohl die Möglichkeiten als auch die Schwerpunkte in der Bewertung durch Google & Co verändern sich laufend, ebenso eröffnet die Technik immer neue Chancen.</p>
+		<ul>
+			<li>Perfekte Darstellung auf allen Displaygrößen</li>
+			<li>Mehr Besucher durch besserte Usability</li>
+			<li>professionelles Content Marketing</li>
+			<li>herausragendem Webauftritt </li>
+			<li>Content Audits</li>
 
 
+		</ul>
+	</div>
+		<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
+			</article>
+			<article class="leistung-box">
+		<h1>Professional</h1>
+	<div>
+		<p>Die Verbreitung mobiler Kommunikationsgeräte mit Internetzugang nimmt rasant zu, Smartphone & Co. eröffnen jederzeit und überall den Zugriff auf das Internet – und setzen damit die Anforderung an das Design einer Homepage deutlich nach oben. </p>
+		<ul>
+			<li>aussagekräftigen Homepage </li>
+			<li>Suchmaschinenoptimierung</li>
+			<li>Online-Marketing Maßnahmen</li>
+			<li>unverwechselbaren Design</li>
+			<li>Modernes responsive Webdesign</li>
+			<li>u besseren Platzierungen in den Suchergebnissen</li>
+			<li>erschließbare Bedienbarkeit & schnelle Ladezeiten </li>
 
+		</ul>
+	</div>
+		<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
+			</article>
+			</div>
+</section>
 
-	<!-- === FOOTER ALT
-	<footer id="footer">
-		<div id="container">
-			<div class="row">
-				<div class="col-6">
-					<span>WEBDESIGN by SCHADLER & WIESINGER (2020)</span>
-					<nav id="footer-nav">
-						<a href="impressum.html">Impressum</a>
-					</nav>
-				</div>
+<!-- === Leistungen === -->
+<section class="leistung" id="leistungen2">
+
+	<div class="flex-container">
+		<header class="intro-container">
+			<h1>Online & Content-Marketing</h1>
+			<p>Durch Content-Marketing entstehen Communities, Einzigartige Inhalte inspirieren Kunden und verbessern das Ranking in Suchmaschinen.</p>
+		</header>
+	</div>
+<div class="flex-container">
+
+	<article class="leistung-box">
+		<h1>Basic</h1>
+	<div>
+		<p>Als Agentur für Webdesign & Online-Marketing liegt der Fokus unserer Marketing Arbeit auf einer effektiven und natürlichen Steigerung von Besucherzahlen, was wiederum zu einer Steigerung von potentiellen Neukunden führt. Dabei legen wir großen Wert auf ein stimmiges Konzept aus einem ansprechenden, benutzerfreundlichen Design und hochwertigen Inhalten, die dem Website Besucher einen Mehrwert liefern.</p>
+		<ul>
+			<li>zielführende Marketing Strategie</li>
+			<li>ausführlich über potentielle Werbemöglichkeiten</li>
+			<li> erfahrene Texter </li>
+			<li>stimmige Konzepte</li>
+			<li>Steigerung von Besucherzahlen</li>
+		</ul>
+	</div>
+		<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
+			</article>
+			<article class="leistung-box leistung-box-empfohlen">
+		<h1>Advanced</h1>
+	<div>
+		<p>Content Marketing bildet Communities, inspiriert potenzielle Kunden und verbessert also ihr Ranking in Suchmaschinen anhand von hochwertigen und für Kunden wertvollen Inhalten, die im besten Fall immer ein Problem lösen. Dabei zielt eine gute Content Marketing Strategie immer darauf ab, die Interaktion mit Ihren Seitenbesuchern zu steigern</p>
+		<ul>
+			<li>Imagesteigerung durch Mehrwerte</li>
+			<li>Kundenbedürfnis wecken</li>
+			<li>Besseres Google Ranking</li>
+			<li>Mehr Besucher durch interessante Inhalte</li>
+			<li>Kunden und Zielgruppe besser erreichen</li>
+			<li>Image gegenüber Neukunden aufgebauen und verbessern</li>
+
+		</ul>
+	</div>
+		<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
+			</article>
+			<article class="leistung-box">
+		<h1>Professional</h1>
+	<div>
+		<p>Content Marketing ist ein äußerst effektiver Weg um ihre Conversion Rate (Verkäufe, Kontaktanfragen, Buchungen etc.) auf natürliche und seriöse Art zu steigern. Zudem offenbart eine Content Strategie die Bedürfnisse ihrer Zielgruppe</p>
+		<ul>
+			<li>Viralität: Mehr Reichweite durch Verbreitung Ihrer Inhalte</li>
+			<li>Abgrenzung von Wettbewerbern</li>
+			<li>von der Konkurrenz absetzen</li>
+			<li>wertvolle Informationsquelle </li>
+			<li>größeren Bekanntheit</li>
+			<li>Online Bekanntheit steigern</li>
+
+		</ul>
+	</div>
+		<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
+			</article>
+			</div>
+</section>
+
+<!-- === Leistungen === -->
+<section class="leistung" id="leistungen3">
+
+	<div class="flex-container">
+		<header class="intro-container">
+			<h1>Social Media Marketing</h1>
+			<p>Wie Unternehmen Ihre Zielgruppe am einfachsten erreichen können? Facebook, Instagram und Co sind für Unternehmen unverzichtbar geworden.</p>
+		</header>
+	</div>
+<div class="flex-container">
+
+	<article class="leistung-box">
+		<h1>Basic</h1>
+	<div>
+		<p>Social Media ist eine der einfachsten Wege seine eigenen Produkte oder Dienstleistungen einer riesigen Anzahl von Personen zu präsentieren. Eine aktive und gepflegte Facebook, Instagram oder Twitter Seite erzeugt Authentizität bei der Zielgruppe kann einem Unternehmen zu einem gesunden Wachstum seiner Wunschkunden verhelfen.</p>
+		<ul>
+			<li>Machen Sie aus Ihren Kunden Ihre Fans</li>
+			<li>aktive Pflege von Sozialen Kanälen</li>
+			<li> verbessertes Ranking in dessen Suchalgorithmus</li>
+			<li>spezifische Zielgruppen erstellen</li>
+			<li>bereits mit niedrigen Werbebudget</li>
+
+		</ul>
+	</div>
+		<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
+			</article>
+			<article class="leistung-box leistung-box-empfohlen">
+		<h1>Advanced</h1>
+	<div>
+		<p>Aus Marketing-Sicht spielt Social Media eine weitaus bedeutsamere Rolle. Durch Zielgruppen genaue Analyse Ihrer Fans können Unternehmen mehr über das Verhalten und deren Bedürfnisse herausfinden.Große Reichweite für Werbung. emeinsam mit Ihnen finden wir die richtigen Social Media Strategie, mit der Sie ganz gezielt auf Ihre Wunschkunden zugehen können.</p>
+		<ul>
+			<li>Einfache Kommunikation mit Ihren Kunden</li>
+			<li>Sehr spezifische Zielgruppen möglich</li>
+			<li>Immer im Gespräch bleiben</li>
+			<li>Imagebildung durch eigene Inhalte</li>
+			<li>Verbessert Ihre SEO-Performance</li>
+
+		</ul>
+	</div>
+		<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
+			</article>
+			<article class="leistung-box">
+		<h1>Professional</h1>
+	<div>
+		<p>Nirgendwo im Internet findet die Kommunikation mit der Zielgruppe einfacher statt als über Facebook,Für unsere Kunden betreuen wir eine Vielzahl von Social Media Kanälen, führen Zielgruppen Recherchen und gezielte Werbekampagnen durch. Sollten Sie an einer Beratung interessiert sein, können Sie uns gerne jederzeit eine Anfrage zukommen lassen.</p>
+		<ul>
+			<li>Viralität: Mehr Reichweite durch Verbreitung Ihrer Inhalte</li>
+			<li>Große Reichweite für Werbung</li>
+			<li>gutem SEO </li>
+			<li>einzigartiges Content</li>
+			<li>Zielgruppen Recherchen</li>
+			<li>unverbindliche Beratung</li>
+		</ul>
+	</div>
+		<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
+			</article>
+			</div>
+</section>
+
+<!-- === Leistungen === -->
+<section class="leistung" id="leistungen4">
+
+	<div class="flex-container">
+		<header class="intro-container">
+			<h1>Logo Design & Branding & Fotografie</h1>
+			<p>Unsere Corporate Designs umfassen Logo- und Layout-Erstellung für Visitenkarten, Briefpapier, Newsletter, Flyer oder weitere grafische Erzeugnisse.</p>
+		</header>
+	</div>
+<div class="flex-container">
+
+	<article class="leistung-box">
+		<h1>Basic</h1>
+	<div>
+		<p>Ihr Unternehmen / Startup benötigt ein Logo? Wir helfen Ihnen dabei, das passende Firmenlogo nach Ihren Vorstellungen zu finden. Unabhängig davon, ob Sie bereits eine Idee haben oder uns die Konzeption des Logos sowie dem Branding & Corporate Design aller dazugehörenden Komponenten wie Visitenkarten, Briefpapier oder anderem Präsentationsmaterial überlassen wollen. Mit uns haben Sie einen vertrauensvollen Partner an Ihrer Seite.</p>
+		<ul>
+			<li> min. 3 verschiedenen Logo-Illustrationen</li>
+			<li>mind. 4 Korrekturrunden</li>
+			<li>digitalen RGB sowie druckfertigen CMYK Datei</li>
+			<li>garantiert zu 100% nach der im Vorfeld festgelegten Deadline</li>
+
+		</ul>
+	</div>
+		<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
+			</article>
+			<article class="leistung-box leistung-box-empfohlen">
+		<h1>Advanced</h1>
+	<div>
+		<p>Um unseren Kunden einen möglichst komfortablen und breiten Service anbieten zu können, übernehmen wir auf Wunsch auch nach der Fertigstellung eines Projekts den Support und die Wartung (bspw. Website / Online-Shop). Auch können Sie bei uns ein individuell abgestimmtes Hosting-Paket inkl. Domains auf unseren super schnellen SSD-Managed Servern buchen. Dabei profitieren Sie von einer auf die Anforderungen an das Webprojekt ausgelegten Skalierbarkeit. </p>
+		<ul>
+			<li>Performance Hosting</li>
+			<li>Unique Content</li>
+			<li>Support & Beratung</li>
+			<li>Individuelle Anforderungen ausgelegt.</li>
+			<li>schnelle SSD Managed Webserver</li>
+			<li>Hostingpakete für minimale Ladezeiten</li>
+			<li>Übersetzungen, Produktbeschreibungen</li>
+		</ul>
+	</div>
+		<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
+			</article>
+			<article class="leistung-box">
+		<h1>Professional</h1>
+	<div>
+		<p>Die Fotografie bietet die besondere Möglichkeit, nicht nur Farben, Formen und Bewegungen festzuhalten, sondern auch Emotionen. Von Businessfotos über Aufnahmen privater Feierlichkeiten bis zur Hochzeitsfotografie zeigen unsere Fotografen, wie gut sie ihr Handwerk verstehen — und mit wie viel Leidenschaft sie dieses ausüben.</p>
+		<ul>
+			<li>Fotografie für Business, Events und mehr</li>
+			<li>anspruchsvolle Fotografie für Werbung und PR</li>
+			<li>Portraits & Shootings</li>
+			<li>Produktbilder</li>
+			<li>Gebäude & Räumlichkeiten</li>
+			<li>Events & Veranstaltungen</li>
+
+		</ul>
+	</div>
+		<button type="button" class="button-typ-2 leistung-auswählen-button">Auswählen</button>
+			</article>
+			</div>
+</section>
+
+<!-- === FOOTER === -->
+
+<footer id="footer">
+
+<div id="container">
+	<div class="row">
+		<div class="col-6">
+			<span>WEBDESIGN by SCHADLER & WIESINGER (2020)</span>
+			<nav id="footer-nav">
+			<a href="impressum.html">Impressum</a>
+			</nav>
 			</div>
 		</div>
-	</footer>
-		=== -->
-
-
-</body>
+	</div>
+</footer>
+	</body>
 
 </html>
