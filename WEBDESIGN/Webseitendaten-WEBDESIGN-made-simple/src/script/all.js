@@ -1,7 +1,11 @@
 $(document).ready(function () {
 
 	if (window.location.href.includes("index.html")) {
-		document.getElementById('nb-button').addEventListener('click', function () { sendToFormular(1, 1); }, false);
+		document.getElementById('nb-button').addEventListener('click', function () {
+			let mail = document.getElementById('nb-email').value;
+			sendForm(mail);
+		}
+			, false);
 	}
 	else if (window.location.href.includes("leistungen.html")) {
 		document.getElementById('leistung-1-basic').addEventListener('click', function () { sendToFormular(1, 1); }, false);
@@ -15,7 +19,7 @@ $(document).ready(function () {
 		document.getElementById('leistung-3-pro').addEventListener('click', function () { sendToFormular(3, 3); }, false);
 		document.getElementById('leistung-4-basic').addEventListener('click', function () { sendToFormular(4, 1); }, false);
 		document.getElementById('leistung-4-adv').addEventListener('click', function () { sendToFormular(4, 2); }, false);
-		$('#leistung-4-pro').click(function () { sendForm(4,3) });
+		$('#leistung-4-pro').click(function () { sendToFormular(4,3) });
 		//document.getElementById('leistung-4-pro').addEventListener('click', function () { sendToFormular(4, 3); }, false);
 	}
 	else if (window.location.href.includes("kontakt.html")) {
@@ -68,8 +72,28 @@ $(document).ready(function () {
 		alert(leistung + "\n" + edition);
 	}
 
-	function sendForm(leistung, edition) {
-		alert("Das ist die "+"Funktion sendForm()\n"+leistung + "\n" + edition);		
+	//Anmeldung zum Newsletter
+	function sendForm(mailadress) {
+
+		var xhr = new XMLHttpRequest();
+		var url = " http://localhost:3000/newsletter";
+		xhr.open("POST", url, true);
+		xhr.setRequestHeader("Content-Type", "application/json");
+		xhr.onreadystatechange = function () {
+			if (xhr.readyState === 4 && xhr.status === 200) {
+				var json = JSON.parse(xhr.responseText);
+				console.log(json.id);
+			}
+
+			if (xhr.readyState === 4 && xhr.status === 500) {
+				alert("Fehler! Die Adresse ist bereits zum Newsletter angemeldet.");
+			}
+		};
+		var data = "{" + "\"" + "id" + "\"" + ":" + "\"" + mailadress + "\"" + "}";
+		console.log(data);
+		xhr.send(data);
+		alert("Anmeldung wurde gesandt.");
+		
 	}
 });
 
