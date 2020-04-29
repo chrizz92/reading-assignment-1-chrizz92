@@ -2,8 +2,15 @@ $(document).ready(function () {
 
 	if (window.location.href.includes("index.html")) {
 		document.getElementById('nb-button').addEventListener('click', function () {
-			let mail = document.getElementById('nb-email').value;
-			sendForm(mail);
+			;
+			if (isAPIavailable()) {
+				let mail = document.getElementById('nb-email').value;
+				sendNewsletterForm(mail);
+			}
+			else {
+				//alert("Anmeldung fehlgeschlagen");
+            }
+			
 		}
 			, false);
 	}
@@ -72,30 +79,65 @@ $(document).ready(function () {
 		alert(leistung + "\n" + edition);
 	}
 
+
+	//Check if Rest-API is available or not
+	function isAPIavailable() {
+		var request = new XMLHttpRequest();
+		request.open('GET', 'http://localhost:3000/newsletter', true);
+
+		request.onload = function () {
+
+			// Begin accessing JSON data here
+			var data = JSON.parse(this.response);
+
+			if (request.status >= 200 && request.status < 400) {
+				alert("online");
+			} else {
+				alert("offline");
+			}
+		}
+
+		request.send();
+	}
+
+
+
+
 	//Anmeldung zum Newsletter
-	function sendForm(mailadress) {
+	function sendNewsletterForm(mail) {
 
 		var xhr = new XMLHttpRequest();
-		var url = " http://localhost:3000/newsletter";
-		xhr.open("POST", url, true);
+		var url = "http://localhost:3000/newsletter";
+		xhr.open("POST", url, false);
 		xhr.setRequestHeader("Content-Type", "application/json");
 		xhr.onreadystatechange = function () {
 			if (xhr.readyState === 4 && xhr.status === 200) {
 				var json = JSON.parse(xhr.responseText);
-				console.log(json.id);
-			}
-
-			if (xhr.readyState === 4 && xhr.status === 500) {
-				alert("Fehler! Die Adresse ist bereits zum Newsletter angemeldet.");
-			}
+				//alert("Eintrag: " + json.id);
+			} else if (xhr.readyState === 4 && xhr.status === 500) {
+				//alert("Fehler! Die Adresse ist bereits zum Newsletter angemeldet.");
+			} else{
+				//
+            }
 		};
-		var data = "{" + "\"" + "id" + "\"" + ":" + "\"" + mailadress + "\"" + "}";
+		var data = "{" + "\"" + "id" + "\"" + ":" + "\"" + mail + "\"" + "}";
 		console.log(data);
-		xhr.send(data);
-		alert("Anmeldung wurde gesandt.");
-		
+		if (RegExp("[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$").test(mail)) {
+			xhr.send(data);
+			//alert(xhr.status);
+		}		
 	}
+
+	function checkMail(mailadress) {
+		var xhr = new XMLHttpRequest();
+		var url = "http://localhost:3000/newsletter";
+		xhr.open("POST", url, false);
+		xhr.setRequestHeader("Content-Type", "application/json");
+    }
+
 });
+
+
 
 
 //window.onload = function () {}
