@@ -8,7 +8,7 @@ $(document).ready(function () {
 				sendNewsletterForm(mail);
 			}
 			else {
-				//alert("Anmeldung fehlgeschlagen");
+				alert("Anmeldung fehlgeschlagen");
             }
 			
 		}

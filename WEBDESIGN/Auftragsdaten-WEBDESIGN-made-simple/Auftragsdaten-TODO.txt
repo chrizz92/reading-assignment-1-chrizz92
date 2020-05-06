@@ -1,0 +1,9 @@
+Lastenheft:
+	Ergänzung mit fehlenden Informationen aus den anderen Dokumenten
+	
+Pflichtenheft:
+	Erstellen des Pflichtenhefts auf Basis des Lastenhefts
+
+Ordnerstruktur
+	Vereinfachung der Ordnerstruktur nachdem die Bestandteile in Lastenheft integriert
+
