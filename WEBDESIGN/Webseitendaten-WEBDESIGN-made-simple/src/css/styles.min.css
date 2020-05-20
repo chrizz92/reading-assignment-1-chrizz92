@@ -107,6 +107,8 @@ section{
 
 .wichtiger-text{
 	font-weight: bold;
+	color: white;
+	float: left;
 }
 
 .screenreader{
@@ -124,6 +126,12 @@ section{
 
 .button-typ-1:hover{
 	border: 2px solid #FFF;
+}
+
+.sendOkLabel {
+	float: left;
+	color: #FFF;
+	padding: 1.2rem;
 }
 
 .button-typ-2{

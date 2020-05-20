@@ -3,7 +3,9 @@ $(document).ready(function () {
 	if (window.location.href.includes("index.html")) {
 		document.getElementById('nb-button').addEventListener('click', function () {
 			let mail = document.getElementById('nb-email').value;
-			sendForm(mail);
+			if (RegExp("[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$").test(mail)) {
+				sendForm(mail);
+			}	
 		}
 			, false);
 	}
@@ -76,19 +78,17 @@ $(document).ready(function () {
 		xhr.open("POST", url, true);
 		xhr.setRequestHeader("Content-Type", "application/json");
 		xhr.onreadystatechange = function () {
-			if (xhr.readyState === 4 && xhr.status === 200) {
-				var json = JSON.parse(xhr.responseText);
-				console.log(json.id);
-			}
-
-			if (xhr.readyState === 4 && xhr.status === 500) {
+			if (xhr.readyState === 4 && xhr.status === 201) {
+				alert("Vielen Dank! Die Anmeldung war erfolgreich");
+			} else if (xhr.status === 500) {
 				alert("Fehler! Die Adresse ist bereits zum Newsletter angemeldet.");
 			}
 		};
 		var data = "{" + "\"" + "id" + "\"" + ":" + "\"" + mailadress + "\"" + "}";
-		console.log(data);
 		xhr.send(data);
 		alert("Anmeldung wurde gesandt.");
+
+		
 
 	}
 
