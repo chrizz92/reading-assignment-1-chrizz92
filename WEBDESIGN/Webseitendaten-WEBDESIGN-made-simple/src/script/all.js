@@ -8,6 +8,14 @@ $(document).ready(function () {
 			}	
 		}
 			, false);
+	} else if (window.location.href.includes("unsubscribe.html")) {
+		document.getElementById('nb-unsub-button').addEventListener('click', function () {
+			let mail = document.getElementById('nb-unsub-email').value;
+			if (RegExp("[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$").test(mail)) {
+				sendUnsubscribtion(mail);
+			}
+		}
+			, false);
 	}
 	else if (window.location.href.includes("leistungen.html")) {
 		document.getElementById('leistung-1-basic').addEventListener('click', function () { sendToFormular(1, 1); }, false);
@@ -78,12 +86,33 @@ $(document).ready(function () {
 		xhr.setRequestHeader("Content-Type", "application/json");
 		xhr.onreadystatechange = function () {
 			if (xhr.readyState === 4 && xhr.status === 201) {
-				alert("Vielen Dank! Die Anmeldung war erfolgreich");
+				alert("Vielen Dank! Die Anmeldung war erfolgreich.");
 			} 
+			if (xhr.readyState === 4 && xhr.status === 500) {
+				alert("Sie sind bereits zu unserem Newsletter angemeldet!");
+			}
 		};
 		var data = "{" + "\"" + "id" + "\"" + ":" + "\"" + mailadress + "\"" + "}";
 		xhr.send(data);
 		alert("Anmeldung wird gesendet.")
+	}
+
+	//Abmeldung vom Newsletter
+	function sendUnsubscribtion(mailadress) {
+		var xhr = new XMLHttpRequest();
+		var url = "http://localhost:3000/newsletter/" + mailadress;
+		xhr.open("DELETE", url, true);
+		xhr.setRequestHeader("Content-Type", "application/json");
+		xhr.onreadystatechange = function () {
+			if (xhr.readyState === 4 && xhr.status === 200) {
+				alert("Sie wurden erfolgreich abgemeldet.");
+			}
+			if (xhr.readyState === 4 && xhr.status === 404) {
+				alert("Fehler! Diese E-Mail-Adresse ist nicht bekannt.")
+            }
+		};
+		xhr.send();
+		alert("Abmeldung wird gesendet.")
 	}
 
 });
