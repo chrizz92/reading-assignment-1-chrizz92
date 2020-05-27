@@ -278,7 +278,6 @@ section{
 }
 
 #logo-picture{
-	display: inline-block;
 }
 
 #mobile-nav-botton{
@@ -622,25 +621,6 @@ section{
 	min-width: 208px;
 }
 
-.service-box{
-	text-align: center;
-	width: 80%;
-}
-
-.service-box h1{
-	font-size: 1.4rem;
-}
-
-#service-box .row:nth-last-of-type(2)>.col-2:first-of-type>.service-box{
-	margin-right: 0;
-	margin-left: auto;
-}
-
-#service-box .row:nth-last-of-type(2)>.col-2:nth-of-type(2)>.service-box{
-	margin-right: auto;
-	margin-left: auto;
-}
-
 .service-icon{
 	width: 120px;
 	height: 120px;
@@ -669,12 +649,12 @@ section{
 }
 
 @media(max-width: 768px){
-	#service-box .row:nth-last-of-type(2)>.col-2:first-of-type>.service-box{
+	#service-box .row:nth-last-of-type(2)>.col-6:first-of-type>.service-box{
 		margin-right: auto;
 		margin-left: auto;
 	}
 
-	#service-box .row:nth-last-of-type(2)>.col-2:nth-of-type(2)>.service-box{
+	#service-box .row:nth-last-of-type(2)>.col-6:nth-of-type(2)>.service-box{
 		margin-right: auto;
 		margin-left: auto;
 	}
@@ -704,6 +684,7 @@ section{
 }
 
 #nb-werbetext {
+	float: left;
 	color: #FFF;
 	font-size: 1.2rem;
 }
@@ -714,19 +695,53 @@ section{
 }
 
 .nb-email-input {
-	width: 60%;
+	float: left;
+	width: 100%;
 	height: 35px;
 	border: 2px solid #FFF;
 	padding: 0.4rem;
+	margin: 0.2rem;
+}
+
+#nb-salutation{
+	padding-top: 0.6rem;
+	margin-left: -0.6rem;
+	float: left;
+	width: 100%;
+	text-align: left;
+	border: none;
+	color: white;
 }
 
 #nb-button {
+	float: left;
 	height: 35px;
+	width: 100%;
+	margin: 0.2rem;
+	margin-bottom: 1.5rem;
+}
+
+#nb-unsub-button {
+	float: left;
+	height: 35px;
+	width: 100%;
+	margin: 0.2rem;
+	margin-bottom: 1.5rem;
 }
 
 @media(max-width: 1822px) {
 	.nb-email-input {
-		width: 70%;
+		width: 100%;
+	}
+	#nb-salutation{
+		width: 100%;
+	}
+
+	#nb-button{
+		width: 100%;
+	}
+	#nb-unsub-button {
+		width: 100%;
 	}
 }
 
@@ -737,6 +752,9 @@ section{
 	}
 
 	#nb-button {
+		width: 100%;
+	}
+	#nb-unsub-button {
 		width: 100%;
 	}
 }
@@ -764,6 +782,12 @@ section{
 		height: 25px;
 		padding: 0.1rem;
 	}
+	#nb-unsub-button {
+		height: 25px;
+		padding: 0.1rem;
+	}
+
+
 }
 
 #ueber-uns-bereich{
@@ -954,6 +978,12 @@ section{
 }
 
 #foot-nav ul > li {
+	display: inline-block;
+	height: 100%;
+}
+
+#foot-nav ul > li:last-child {
+	margin-right: 1.5rem;
 	display: inline-block;
 	height: 100%;
 }
@@ -1330,7 +1360,9 @@ section{
 }
 
 .col-2{
-	width: 33.333%;
+	width: 100%;
+	margin-top: 0rem;
+	padding-top: 0rem;
 }
 
 .col-3{
@@ -1338,10 +1370,13 @@ section{
 }
 
 .col-4{
-	width: 66.664%;
+	width: 100%;
+	margin-bottom: 0rem;
+	padding-bottom: 0rem;
 }
 
 .col-6{
+	text-align: center;
 	padding: 0;
 	height: 100%;
 	width: 100%;

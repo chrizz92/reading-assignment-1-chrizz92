@@ -163,24 +163,24 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-2">
-					<article class="service-box">
+				<div class="col-6">
+					<article class="intro-container">
 						<div id="guenstig-icon" class="service-icon"></div>
-						<h1>Günstige Angebote</h1>
+						<h2>Günstige Angebote</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 					</article>
 				</div>
-				<div class="col-2">
-					<article class="service-box">
+				<div class="col-6">
+					<article class="intro-container">
 						<div id="schnell-icon" class="service-icon"></div>
-						<h1>Schnelle Lieferung</h1>
+						<h2>Schnelle Lieferung</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 					</article>
 				</div>
-				<div class="col-2">
-					<article class="service-box">
+				<div class="col-6">
+					<article class="intro-container">
 						<div id="modernes-icon" class="service-icon"></div>
-						<h1>Modernes Design</h1>
+						<h2>Modernes Design</h2>
 						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
 					</article>
 				</div>
@@ -193,24 +193,44 @@
 
 	<section id="newsletter-bereich">
 
-		<div class="container">
+		<div class="intro-container">
 			<div class="row">
+
 				<div class="col-4">
 					<p id="nb-werbetext">
 						<span id="nb-multitext" class="wichtiger-text">
-							Melde dich jetzt für den NEWSLETTER an
-							und verpasse kein Neuigkeiten mehr!
-						</span><br /> Wir schicken dir nur interessante Informationen!
+							Melden Sie sich jetzt für unseren NEWSLETTER an
+							und verpassen Sie keine Neuigkeiten mehr! 
+						</span>
 					</p>
 				</div>
-				<div class="col-2">
-					
-					<form id="nb-form" method="post">
-						<label class="screenreader" for="nb-email">E-Mail:</label>
 
+				<div class="col-2">
+					<form id="nb-form" method="post">
+
+						<fieldset id="nb-salutation">
+							Anrede:
+							<input type="radio" id="nb-male" name="Zahlmethode" value="Herr" checked>
+							<label for="male"> Herr</label>
+							<input type="radio" id="nb-female" name="Zahlmethode" value="Frau">
+							<label for="female"> Frau</label>
+						</fieldset>
+
+						<label class="screenreader" for="nb-firstname">Vorname:</label>
+						<input class="nb-email-input" id="nb-firstname" type="text" name="firstname" placeholder="Ihr Vorname"
+							   pattern="([A-Za-z -]{2,20})" required
+							   title="Bitte Vorname angeben" />
+
+						<label class="screenreader" for="nb-lastname">Nachname:</label>
+						<input class="nb-email-input" id="nb-lastname" type="text" name="lastname" placeholder="Ihr Nachname"
+							   pattern="([A-Za-z -]{2,30})" required
+							   title="Bitte Nachnamen angeben" />
+
+						<label class="screenreader" for="nb-email">E-Mail:</label>
 						<input class="nb-email-input" id="nb-email" type="text" name="email" placeholder="Ihre E-Mail Adresse"
 							   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required
-							   title="Gib eine gültige E-Mail Adresse ein" />
+							   title="Eine gültige E-Mail-Adresse ist erforderlich" />
+
 						<button class="button-typ-1" id="nb-button" type="submit">Jetzt Anmelden</button>
 
 					</form>

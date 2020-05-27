@@ -3,8 +3,17 @@ $(document).ready(function () {
 	if (window.location.href.includes("index.html")) {
 		document.getElementById('nb-button').addEventListener('click', function () {
 			let mail = document.getElementById('nb-email').value;
-			if (RegExp("[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$").test(mail)) {
-				sendSubscribtion(mail);
+			let firstname = document.getElementById('nb-firstname').value;
+			let lastname = document.getElementById('nb-lastname').value;
+			let salutation = document.getElementById('nb-male').value;
+			if (document.getElementById('nb-female').checked) {
+				salutation = document.getElementById('nb-female').value;
+			}
+
+			if (RegExp("[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$").test(mail) && RegExp("[A-Za-z -]{2,20}$").test(firstname) && RegExp("[A-Za-z -]{2,30}$").test(lastname)) {
+				//&& RegExp("[A-Za-z -]{2,20}$").test(firstname) && RegExp("[A-Za-z -]{2,30}$").test(lastname)
+				alert(mail + "\n" + salutation + "\n" + firstname + "\n" + lastname);
+				sendSubscribtion(mail, salutation, firstname, lastname);
 			}	
 		}
 			, false);
@@ -79,7 +88,7 @@ $(document).ready(function () {
 	}
 
 	//Anmeldung zum Newsletter
-	function sendSubscribtion(mailadress) {
+	function sendSubscribtion(mail, salutation, firstname, lastname) {
 		var xhr = new XMLHttpRequest();
 		var url = " http://localhost:3000/newsletter";
 		xhr.open("POST", url, true);
@@ -92,7 +101,8 @@ $(document).ready(function () {
 				alert("Sie sind bereits zu unserem Newsletter angemeldet!");
 			}
 		};
-		var data = "{" + "\"" + "id" + "\"" + ":" + "\"" + mailadress + "\"" + "}";
+		var data = "{" + "\"" + "id" + "\"" + ":" + "\"" + mail + "\"" + "," + "\"" + "salutation" + "\"" + ":" + "\"" + salutation + "\"" + "," + "\"" + "firstname" + "\"" + ":" + "\"" + firstname + "\"" + "," + "\"" + "lastname" + "\"" + ":" + "\"" + lastname + "\"" + "}";
+		alert(data);
 		xhr.send(data);
 		alert("Anmeldung wird gesendet.")
 	}
