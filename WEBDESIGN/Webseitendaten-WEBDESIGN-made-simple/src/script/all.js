@@ -4,7 +4,7 @@ $(document).ready(function () {
 		document.getElementById('nb-button').addEventListener('click', function () {
 			let mail = document.getElementById('nb-email').value;
 			if (RegExp("[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$").test(mail)) {
-				sendForm(mail);
+				sendSubscribtion(mail);
 			}	
 		}
 			, false);
@@ -25,7 +25,7 @@ $(document).ready(function () {
 		//document.getElementById('leistung-4-pro').addEventListener('click', function () { sendToFormular(4, 3); }, false);
 	}
 	else if (window.location.href.includes("kontakt.html")) {
-		document.getElementById('kontakt-submit').addEventListener('click', function () { sendForm() }, false);
+		document.getElementById('kontakt-submit').addEventListener('click', function () { sendContactForm() }, false);
 	}
 	else {
 
@@ -71,8 +71,7 @@ $(document).ready(function () {
 	}
 
 	//Anmeldung zum Newsletter
-	function sendForm(mailadress) {
-
+	function sendSubscribtion(mailadress) {
 		var xhr = new XMLHttpRequest();
 		var url = " http://localhost:3000/newsletter";
 		xhr.open("POST", url, true);
@@ -80,16 +79,11 @@ $(document).ready(function () {
 		xhr.onreadystatechange = function () {
 			if (xhr.readyState === 4 && xhr.status === 201) {
 				alert("Vielen Dank! Die Anmeldung war erfolgreich");
-			} else if (xhr.status === 500) {
-				alert("Fehler! Die Adresse ist bereits zum Newsletter angemeldet.");
-			}
+			} 
 		};
 		var data = "{" + "\"" + "id" + "\"" + ":" + "\"" + mailadress + "\"" + "}";
 		xhr.send(data);
-		alert("Anmeldung wurde gesandt.");
-
-		
-
+		alert("Anmeldung wird gesendet.")
 	}
 
 });

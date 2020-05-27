@@ -695,6 +695,14 @@ section{
 	min-width: 208px;
 }
 
+#newsletter-abmeldung-bereich {
+	width: 100%;
+	background-color: #3d3f45;
+	padding-bottom: 0;
+	padding-top: 0;
+	min-width: 208px;
+}
+
 #nb-werbetext {
 	color: #FFF;
 	font-size: 1.2rem;
@@ -931,6 +939,7 @@ section{
 	width: auto;
 	margin-top: 0.8em;
 	margin-bottom: 1.6em;
+	margin-left: 1.8em;
 	float: left;
 
 }

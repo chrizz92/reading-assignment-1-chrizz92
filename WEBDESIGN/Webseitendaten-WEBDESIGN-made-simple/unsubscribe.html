@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>WebDesign made simple</title>
+
+	<!-- === FAVICONS === -->
+	<link rel="apple-touch-icon" sizes="180x180" href="./src/img/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./src/img/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./src/img/favicon/favicon-16x16.png">
+	<link rel="manifest" href="./src/img/favicon/site.webmanifest">
+	<link rel="mask-icon" href="./src/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+	<link rel="shortcut icon" href="./src/img/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#f0f0f0">
+	<meta name="msapplication-config" content="./src/img/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#f0f0f0">
+	<link rel="stylesheet" type="text/css" href="./src/css/styles.min.css">
+</head>
+
+<body>
+
+	<!--=== NAVIGATIONSLEISTE ===-->
+	<nav id="header-nav">
+
+		<!--=== NAVIGATIONSLEISTE DESKTOPMODUS ===-->
+		<div class="container" id="desktop-nav">
+			<div class="row">
+				<div class="col-6">
+					<a href="index.html" class="logo-link" id="logo-picture"><img src="src/img/webdesign-logo.png" alt="Das Logo von webdesign"></a>
+					<ul>
+						<li class="active"><a href="index.html">Startseite</a></li>
+						<li><a href="leistungen.html">Leistungen</a></li>
+						<li><a href="kontakt.html">Kontakt</a></li>
+						<li><a href="impressum.html">Impressum</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--=== NAVIGATIONSLEISTE MOBILEMODUS ===-->
+		<div class="container" id="mobile-nav">
+			<div class="row">
+				<div class="col-6">
+					<a href="index.html" class="logo-link"><img src="src/img/webdesign-logo.png" id="logo-picture" alt="Das Logo von webdesign"><img src="src/img/webdesign-logo-klein.png" id="logo-picture-small" alt="Das Logo von webdesign"></a>
+					<!--===BUTTON===-->
+					<div class="clearfix" id="mobile-nav-dropdown">
+						<div id="mobile-nav-botton"><span>&equiv;</span></div>
+						<div class="clearfix" id="mobile-nav-content">
+							<ul>
+								<li class="active"><a href="index.html">Startseite</a></li>
+								<li><a href="leistungen.html">Leistungen</a></li>
+								<li><a href="kontakt.html">Kontakt</a></li>
+								<li><a href="impressum.html">Impressum</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-- ==== HEADER-BANNER === -->
+
+	<header id="header-banner">
+	</header>
+
+	<!-- === SERVICE - BEREICH === -->
+
+	<!--<section id="service-bereich">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-6">
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-2">
+					
+				</div>
+				<div class="col-2">
+					
+				</div>
+				<div class="col-2">
+					
+				</div>
+			</div>
+		</div>
+	</section>-->
+
+
+	<!-- === NEWSLETTER-Bereich === -->
+
+	<section id="newsletter-abmeldung-bereich">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-4">
+					<p id="nb-werbetext">
+						Hier können Sie sich von unserem Newsletter abmelden
+					</p>
+				</div>
+				<div class="col-2">
+					
+					<form id="nb-unsub-form" method="post">
+						<label class="screenreader" for="nb-email">E-Mail:</label>
+
+						<input class="nb-email-input" id="nb-unsub-email" type="text" name="email" placeholder="Ihre E-Mail Adresse"
+							   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required
+							   title="Gib eine gültige E-Mail Adresse ein" />
+						<button class="button-typ-1" id="nb-unsub-button" type="submit">Abmelden</button>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<!-- === ÜBER - UNS - BEREICH === -->
+
+	<!--<section id="ueber-uns-bereich">
+
+		<div class="container">
+
+			<div class="row">
+				<div class="col-6">
+					
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6">
+					
+						
+					
+				</div>
+
+			</div>
+		</div>
+	</section>-->
+
+	<!-- === FOOTER ALT
+
+			<footer id="footer">
+
+		<div id="container">
+			<div class="row" id="footer-row">
+				<div class="col-6">
+					<span>WEBDESIGN by SCHADLER & WIESINGER (2020)</span>
+					<nav id="footer-nav">
+						<a href="datenschutz.html">Datenschutzerklärung</a>
+						<a href="impressum.html">Impressum</a>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+		=== -->
+	<!--=== NAVIGATIONSLEISTE - FOOTER NEU ===-->
+	<footer>
+		<nav id="foot-nav">
+			<div class="row">
+				<div class="col-6">
+					<span>&copy; Webdesign by Schadler & Wiesinger (2020)</span>
+					<ul>
+						<li><a href="datenschutz.html">Datenschutzerklärung</a></li>
+						<li><a href="impressum.html">Impressum</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</footer>
+	<script src="src/script/jquery-3.4.1.js"></script>
+	<script src="src/script/all.js"></script>
+
+</body>
+
+</html>
