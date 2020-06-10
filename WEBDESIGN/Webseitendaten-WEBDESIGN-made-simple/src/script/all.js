@@ -12,7 +12,6 @@ $(document).ready(function () {
 
 			if (RegExp("[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$").test(mail) && RegExp("[A-Za-z -]{2,20}$").test(firstname) && RegExp("[A-Za-z -]{2,30}$").test(lastname)) {
 				//&& RegExp("[A-Za-z -]{2,20}$").test(firstname) && RegExp("[A-Za-z -]{2,30}$").test(lastname)
-				alert(mail + "\n" + salutation + "\n" + firstname + "\n" + lastname);
 				sendSubscribtion(mail, salutation, firstname, lastname);
 			}	
 		}
@@ -102,7 +101,6 @@ $(document).ready(function () {
 			}
 		};
 		var data = "{" + "\"" + "id" + "\"" + ":" + "\"" + mail + "\"" + "," + "\"" + "salutation" + "\"" + ":" + "\"" + salutation + "\"" + "," + "\"" + "firstname" + "\"" + ":" + "\"" + firstname + "\"" + "," + "\"" + "lastname" + "\"" + ":" + "\"" + lastname + "\"" + "}";
-		alert(data);
 		xhr.send(data);
 		alert("Anmeldung wird gesendet.")
 	}
